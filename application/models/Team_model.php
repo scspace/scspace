@@ -1,0 +1,87 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * Team_Model
+ *
+ * @author Yujin Kim <yujin.gaya@gmail.com>
+ * @copyright Copyright (c) 학생문화공간위원회
+ * 
+ *
+ * Handles DB related to asks, including writing, getting, etc.
+ *
+ */
+
+class Team_model extends CI_Model {
+
+    function __construct(){
+        parent::__construct();
+    }
+
+    function register(){
+        date_default_timezone_set('Asia/Seoul');
+
+        $team = array(
+            'name' => $this->input->post('name'),
+            'delegator_id' => $_SESSION['student_id'],
+            'time_register' => date('Y-m-d H:i:s')
+        );
+
+        $this->db->insert('team',$team);
+        $id = $this->db->insert_id();
+
+        $names = $this->input->post('member[name]');
+        $student_id = $this->input->post('member[student_id]');
+
+        foreach (range(0, count($names)-1) as $i){
+
+            $member['team_id'] = $id;
+            $member['name'] = $names[$i];
+            $member['student_id'] = $student_id[$i];
+
+            $this->db->insert('team_member',$member);
+        }
+
+        return $id;
+
+    }
+
+    function get_members(){
+        $student_id = $_SESSION['student_id'];
+
+        $this->db->select('team_id');
+        $this->db->where('student_id',$student_id);
+        $teams = $this->db->get('team_member')->result_array();
+        $members = array();
+
+        foreach($teams as $team){
+
+            $this->db->select('name, student_id');
+            $this->db->where('team_id', $team['team_id']);
+            $members_of_this_team = $this->db->get('team_member')->result_array();
+
+            $this->db->select('name');
+            $this->db->where('id', $team['team_id']);
+            $team_name = $this->db->get('team')->row()->name;
+
+            $members[$team_name] = $members_of_this_team;
+        }
+        return $members;
+    }
+
+    function get(){
+        return $this->db->get('team')->result();
+    }
+
+    function get_team_info($team_id){
+        $this->db->select('team.name AS team_name, time_register, user.student_id, user.name, user.phone, user.email');
+        $this->db->where('team.id', $team_id);
+        $this->db->join('user', 'user.student_id = team.delegator_id');
+        return $this->db->get('team')->row_array();
+    }
+    function get_members_of_team($team_id){
+        $this->db->where('team_id', $team_id);
+        return $this->db->get('team_member')->result_array();
+    }
+
+}

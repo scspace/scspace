@@ -1,0 +1,19 @@
+
+/* 팀 */
+    총괄 및 백엔드: 김유진
+
+    UI, UX 디자인: 권동현
+
+    프론트엔드: 조현근
+
+    기획: 이현주
+
+/* 고마운 사람들 */
+
+    기술 조언: 박지훈
+
+/* SITE */
+    Last update: 2016/07/04
+    Standards: HTML5, CSS3
+    Components: Codeigniter, Bootstrap.
+    Software: Atom, SourceTree, Photoshop, FileZilla
