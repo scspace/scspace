@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col-sm-offset-2 col-sm-8">
             <div class="panel panel-success">
-                <div class="panel-heading"> 다음과 같이 합주실 팀 등록이 완료되었습니다. </div>
+                <div class="panel-heading"> 다음과 같이 합주실 팀이 등록 되었습니다. </div>
                 <div class="panel-body">
                     <section class="form-horizontal">
                         <h4> 팀 정보 </h4> <hr>
@@ -69,25 +69,33 @@
                             </div>
                         </div>
                     </section>
-                    <h4> 팀원 정보 </h4> <hr>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th> # </th>
-                                <th> 이름 </th>
-                                <th> 학번 </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <?php foreach($members as $index=>$member):?>
-                            <tr>
-                                <td> <?=$index?> </td>
-                                <td> <?=$member['name']?> </td>
-                                <td> <?=$member['student_id']?> </td>
-                            </tr>
-                        <?php endforeach;?>
-                        </tbody>
-                    </table>
+
+                    <section>
+                        <h4> 팀원 정보 </h4> <hr>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th> # </th>
+                                    <th> 이름 </th>
+                                    <th> 학번 </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($members as $index=>$member):?>
+                                <tr>
+                                    <td> <?=$index?> </td>
+                                    <td> <?=$member['name']?> </td>
+                                    <td> <?=$member['student_id']?> </td>
+                                </tr>
+                            <?php endforeach;?>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section>
+                        <h4> 예치금 환급 계좌 </h4> <hr>
+                        <?=$team['refund']?>
+                    </section>
                 </div>
             </div>
         </div>

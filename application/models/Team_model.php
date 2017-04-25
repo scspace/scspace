@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- * 
+ *
  *
  * Handles DB related to asks, including writing, getting, etc.
  *
@@ -24,7 +24,8 @@ class Team_model extends CI_Model {
         $team = array(
             'name' => $this->input->post('name'),
             'delegator_id' => $_SESSION['student_id'],
-            'time_register' => date('Y-m-d H:i:s')
+            'time_register' => date('Y-m-d H:i:s'),
+            'refund' => $this->input->post('refund')
         );
 
         $this->db->insert('team',$team);
@@ -69,12 +70,21 @@ class Team_model extends CI_Model {
         return $members;
     }
 
+    function get_my_teams() {
+        $student_id = $_SESSION['student_id'];
+
+        $this->db->select('team_id, team.name AS team_name');
+        $this->db->join('team', 'team.id = team_member.team_id');
+        $this->db->where('student_id',$student_id);
+        return $this->db->get('team_member')->result_array();
+    }
+
     function get(){
         return $this->db->get('team')->result();
     }
 
     function get_team_info($team_id){
-        $this->db->select('team.name AS team_name, time_register, user.student_id, user.name, user.phone, user.email');
+        $this->db->select('team.name AS team_name, time_register, refund, user.student_id, user.name, user.phone, user.email');
         $this->db->where('team.id', $team_id);
         $this->db->join('user', 'user.student_id = team.delegator_id');
         return $this->db->get('team')->row_array();

@@ -131,6 +131,72 @@
             </div>
         </section>
 
+        <section>
+            <h4> 보증금 안내 </h4>
+            <hr>
+            <div class="form-group">
+
+
+                <div class="col-sm-offset-2 col-sm-10">
+                    <p> 합주실 팀 등록 신청 후 아래 보증금 계좌로 예치금 <span class="soft-red">50,000원</span>을 입금해야 팀 등록이 완료됩니다 </p>
+                </div>
+
+                <label class="col-sm-2 control-label"> 보증금 계좌 </label>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-xs-12" style="margin-bottom:8px;">
+
+                            <div class="row">
+                                <label class="col-xs-3 col-sm-2 control-label second-label"> 은행 </label>
+                                <div class="col-xs-9 col-sm-10">
+                                    <p class="form-control-static"> <?=$deposit['bank']?> </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12" style="margin-bottom:8px;">
+
+                            <div class="row">
+                                <label class="col-xs-3 col-sm-2 control-label second-label"> 계좌 </label>
+                                <div class="col-xs-9 col-sm-10">
+                                    <p class="form-control-static"> <?=$deposit['account']?> </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12" style="margin-bottom:8px;">
+
+                            <div class="row">
+                                <label class="col-xs-3 col-sm-2 control-label second-label"> 예금주 </label>
+                                <div class="col-xs-9 col-sm-10">
+                                    <p class="form-control-static"> <?=$deposit['holder']?> </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <p>
+                        학기 말 보증금을 돌려받을 계좌를 입력해주세요.
+                        예치금은 상근일 기준으로 키 반납이 하루 늦어질 때 마다 2,000원씩 차감되며,
+                        예치금이 0원이 될 경우 예치금을 다시 입금해 주셔야 합주실을 계속 이용하실 수 있습니다.
+                        보증금에서 연체 수수료를 제한 금액이 반환됩니다
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label"> 환급 계좌 </label>
+                <div class="col-sm-8 col-md-6">
+                    <input type="text" name="refund" class="form-control" placeholder="은행, 계좌번호, 예금주를 모두 입력해주세요" required>
+                </div>
+            </div>
+        </section>
+
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default"> 등록하기 </button>

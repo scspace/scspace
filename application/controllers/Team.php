@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- * 
+ *
  */
 
 class Team extends CI_Controller {
@@ -17,29 +17,26 @@ class Team extends CI_Controller {
 		if (!isset($_SESSION['type'])){
 			echo "<script type='text/javascript'>alert('팀을 등록하기 위해 먼저 로그인해 주세요.');location.href='/login';</script>";
 		}
+		$this->load->database();
     }
 
 	public function index(){
 		show_404();
 	}
 
-    public function space($space){
-		$this->lang->load('general','korean');
+	public function register($space){
+		$this->load->model('setting_model');
+		$deposit = $this->setting_model->get_deposit_account();
 
-        $this->load->view('head');
+		$this->load->view('head');
 		$this->load->view('global-nav');
 
-        $this->load->view('footer');
-    }
+		$this->load->view('/form/team/'.$space, array(
+			'deposit' => $deposit
+		));
 
-	public function register($space){
-       $this->load->view('head');
-       $this->load->view('global-nav');
-
-       $this->load->view('/form/team/'.$space);
-
-	   $angulars = array('controller/formController','service/FormValidator');
-       $this->load->view('footer', array('angulars' => $angulars));
+		$angulars = array('controller/formController','service/FormValidator');
+		$this->load->view('footer', array('angulars' => $angulars));
 	}
 
     public function register_process(){

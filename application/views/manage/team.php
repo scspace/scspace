@@ -22,9 +22,14 @@
         <tbody>
             <?php foreach($teams as $team):?>
             <tr>
-                <td> <?=$team->name?> </td>
+                <td>
+                    <a href="/group-practice-room/team/<?=$team->id?>">
+                        <?=$team->name?>
+                    </a>
+                </td>
                 <td> <?=$team->delegator_id?> </td>
                 <td> <?=$team->time_register?> </td>
+
             </tr>
 
             <?php endforeach;?>

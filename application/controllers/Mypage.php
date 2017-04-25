@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- * 
+ *
  */
 
 class Mypage extends CI_Controller {
@@ -27,11 +27,11 @@ class Mypage extends CI_Controller {
         $reservations = $this->reservation_model->get_my_reservations();
 
 		$this->load->model('team_model');
-		$members = $this->team_model->get_members();
+		$teams = $this->team_model->get_my_teams();
 
         $this->load->view('mypage',array(
 			'reservations' => $reservations,
-			'members' => $members
+			'teams' => $teams
 		));
         $this->load->view('footer',array('angulars'=>array('controller/mypage')));
 	}

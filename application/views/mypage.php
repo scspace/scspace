@@ -154,49 +154,11 @@ for($i = 0;$i < count($reservations); $i++){
 		</thead>
 		<tbody>
 			<?php
-			$i = 0;
-			foreach($members as $team_name=>$member_list):$i++;?>
+			foreach($teams as $team)?>
 			<tr>
-				<td> <a data-toggle="modal" data-target="#<?=$i?>"><?=$team_name?> </a> </td>
+				<td> <a href="/group-practice-room/team/<?=$team['team_id']?>"> <?=$team['team_name']?></a> </td>
 			</tr>
-			<?php endforeach;?>
+
 		</tbody>
 	</table>
-
-	<?php
-	$i = 0;
-	foreach($members as $team_name=>$member_list):$i++;?>
-	<div class="modal fade" id="<?=$i?>" tabindex="-1" role="dialog" aria-labelledby="<?$team_name?>">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel"><?=$team_name?></h4>
-				</div>
-				<div class="modal-body">
-					<table class="table table-hover">
-						<thead>
-							<tr>
-								<th> 이름 </th>
-								<th> 학번 </th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php foreach($member_list as $member):?>
-							<tr>
-								<td> <?=$member['name']?> </td>
-								<td> <?=$member['student_id']?> </td>
-							</tr>
-							<?php endforeach;?>
-						</tbody>
-					</table>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal"> 닫기 </button>
-					<!--<button type="button" class="btn btn-primary"></button>-->
-				</div>
-			</div>
-		</div>
-	</div>
-	<?php endforeach;?>
 </main>
