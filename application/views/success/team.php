@@ -37,7 +37,7 @@
                                         <div class="row">
                                             <label class="col-xs-3 col-sm-2 control-label second-label"> 이름 </label>
                                             <div class="col-xs-9 col-sm-10">
-                                                <p class="form-control-static"> <?=$_SESSION['name']?> </p>
+                                                <p class="form-control-static"> <?=$team['name']?> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -45,7 +45,7 @@
                                         <div class="row">
                                             <label class="col-xs-3 col-sm-2 control-label second-label"> 학번 </label>
                                             <div class="col-xs-9 col-sm-10">
-                                                <p class="form-control-static"> <?=$_SESSION['student_id']?> </p>
+                                                <p class="form-control-static"> <?=$team['student_id']?> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -53,7 +53,7 @@
                                         <div class="row">
                                             <label class="col-xs-3 col-sm-2 control-label second-label"> 전화번호 </label>
                                             <div class="col-xs-9 col-sm-10">
-                                                <p class="form-control-static"> <?=$_SESSION['phone']?> </p>
+                                                <p class="form-control-static"> <?=$team['phone']?> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
                                         <div class="row">
                                             <label class="col-xs-3 col-sm-2 control-label second-label"> 이메일 </label>
                                             <div class="col-xs-9 col-sm-10">
-                                                <p class="form-control-static"> <?=$_SESSION['email']?> </p>
+                                                <p class="form-control-static"> <?=$team['email']?> </p>
                                             </div>
                                         </div>
                                     </div>
