@@ -30,7 +30,7 @@
                 <div class="col-xs-4">
                     <img src="/static/images/icon/people.png" alt="사람 수" class="intro-icon center-block"/>
                     <p class="text-center margin-heading">
-                        <small>20명 수용 가능</small>
+                        <small>3명 수용 가능</small>
                     </p>
                 </div>
                 <div class="col-xs-4">
