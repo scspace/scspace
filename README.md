@@ -41,7 +41,7 @@
 
 6. *web-root*/application/config/ga-key.template.php 를 ga-key.php 로 복사하여 ga_key를 Google Analytics 토큰에 맞게 설정하라
 
-7. *web-root*/application/config/iam-key.template.php 를 iam-key.php 로 복사하여 iam_key, iam_id, iam_password 를 카이스트 IT개발팀으로부터 단일 인증 서비스 사용 신청하여 획득한 토큰, sysop 의 카이스트 아이디, 비밀번호로 수정하라. 이 단계가 진행되지 않으면, 로그인을 할 수 없다
+7. *web-root*/application/config/iam-key.template.php 를 iam-key.php 로 복사하여 iam_key 를 카이스트 IT개발팀으로부터 단일 인증 서비스 사용 신청하여 획득한 토큰으로 수정하라. 이 단계가 진행되지 않으면, 로그인을 할 수 없다
 
 8. 웹 브라우저로 제대로 작동하는지 확인하고, 이상이 있다면 이전 개발자에게 문의한다
 
@@ -72,13 +72,13 @@
 
 이 서비스는 개인정보를 이용하기 때문에 반드시 HTTPS 를 비롯한 보안 연결로 서비스 돼야 한다. 이를 위해 [CertBot](https://certbot.eff.org) 을 사용하길 권한다
 
-​이 서비스는 [카이스트 IT개발팀](tel:+82-42-350-5283) 에서 제공하는 [SOAP](https://en.wikipedia.org/wiki/SOAP) API 로 개인정보를 취득, 관리하고 있다. 이에 대한 Specification 은 __단일 인증 서비스 V3.0 적용 가이드__라는 문서에서 소개하고 있다. ~~이 서비스는 암호키와 서비스 사용자 (이 프로젝트의 경우 서버 관리자) 의 카이스트 IAM 계정을 요구한다. (이는 불필요한 정보가 서버에 저장되어 잘못된 보안이다.:rage: 서비스별로 토큰을 발급하는 것이 더 안전하다.)~~ v3.0.1 버전부터 필요없게 되었다 :+1:
+​이 서비스는 [카이스트 IT개발팀](tel:+82-42-350-5283) 에서 제공하는 [SOAP](https://en.wikipedia.org/wiki/SOAP) API 로 개인정보를 취득, 관리하고 있다. 이에 대한 Specification 은 **단일 인증 서비스 V3.0 적용 가이드**라는 문서에서 소개하고 있다. ~~이 서비스는 암호키와 서비스 사용자 (이 프로젝트의 경우 서버 관리자) 의 카이스트 IAM 계정을 요구한다. (이는 불필요한 정보가 서버에 저장되어 잘못된 보안이다.:rage: 서비스별로 토큰을 발급하는 것이 더 안전하다.)~~ v3.0.1 버전부터 필요없게 되었다 :+1:
 
 ## 기여
 
-이 프로젝트에 기여하고자 한다면, 먼저 [프로젝트 위키](https://github.com/YujinGaya/scspace/wiki)를 방문하길 추천한다
+이 프로젝트에 기여하고자 한다면, 먼저 [프로젝트 위키](https://github.com/scspace/scspace/wiki)를 방문하길 추천한다
 
-이 프로젝트는 [4기 김유진](https://github.com/YujinGaya)이 시작했으며, 4대 위원장 권동현이 디자인에, 3대 위원장 이현주가 기획에, 3기 조현근이 개발에 참여했다. 인물은 ㄱㄴㄷ순 정렬이다 :smiley:
+이 프로젝트는 [4기 김유진](https://github.com/YujinGaya)이 시작했으며, 4대 위원장 권동현이 디자인에, 3대 위원장 이현주가 기획에, 3기 조현근이 개발에 참여했다. 인물은 ㄱㄴㄷ순 정렬이다 ​:smiley:​
 
 ## 판권과 라이센스
 
