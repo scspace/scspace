@@ -19,7 +19,7 @@
             <p class="col-sm-offset-3 col-sm-9">
                 장영신학생회관 안팎의 게시물은 아래의 규정에 따라 신고한 후 부착해야 합니다 <br>
                 <a class="btn btn-primary soft-red-button"
-                  href="/static/20170426 poster rule.docx"
+                  href="/static/documents/20170426 poster rule.docx"
                   download="20170426 poster rule.docx"
                   style="margin: 1em 0 0"> 규정 다운로드 </a>
             </p>
