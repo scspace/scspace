@@ -213,6 +213,7 @@
                     <li> - 보증금은 예약이 <span class="soft-red">승인된 후 입금</span>해야 합니다. </li>
                     <li> - 예약이 승인되더라도 보증금이 행사 <span class="soft-red">하루 전 21시까지 입금</span>하지 않을 경우 행사를 진행할 수 없습니다. </li>
                     <li> - 행사 이후 뒷정리의 상태에 따라 보증금의 환급 여부를 결정합니다. </li>
+                    <li> - 감사위에 제출할 <span class="soft-red">보증금 입금 증빙 서류</span>가 필요할 경우 scspace.kaist@gmail.com 로 문의 해 주시기 바랍니다 </li>
                 </ul>
             </div>
 
