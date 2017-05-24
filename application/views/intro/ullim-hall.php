@@ -115,21 +115,24 @@
                 예약이 승인되면 행사 <span class="soft-red">하루 전 21시</span>까지 보증금을 입금해야합니다. 사용 이후 뒷정리와 기물 파손 여부에 따라 보증금 환급 여부가 결정됩니다.
             </p>
             <table class="table">
-                <thead>
-                    <tr>
-                        <th> 반입 안함 </th>
-                        <th> 스낵과 음료 </th>
-                        <th> 음식과 주류 </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> 5만원 </td>
-                        <td> 15만원 </td>
-                        <td> 50만원 </td>
-                    </tr>
-                </tbody>
+              <thead>
+                  <tr>
+                      <th> 반입 안함 </th>
+                      <th> 스낵과 음료 </th>
+                      <th> 음식과 주류 </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 5만원 </td>
+                      <td> 15만원 </td>
+                      <td> 50만원 </td>
+                  </tr>
+              </tbody>
             </table>
+            <small>
+              감사위에 제출할 <span class="soft-red">보증금 입금 증빙 서류</span>가 필요할 경우 scspace.kaist@gmail.com 로 문의 해 주시기 바랍니다
+            </small>
 
             <h3> 패널티 </h3>
 
