@@ -85,7 +85,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th rowspan="5"> 일정 </th>
+                        <th rowspan="4"> 일정 </th>
                         <td> 오픈 공간위 </td>
                         <td colspan="2">
                             9월 6일 - 9월 7일<br>
