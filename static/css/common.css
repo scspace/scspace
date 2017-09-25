@@ -733,6 +733,10 @@ h1.title {
     color: #F27575;
 }
 
+.soft-red:hover {
+    color: #F27575;
+}
+
 .red{
     /* bittersweet */
     background-color:#FE6F5E;
