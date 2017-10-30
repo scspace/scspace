@@ -85,7 +85,7 @@
             <div class="col-card">
                 <div class="card">
                     <h2> 공간 사용 규칙 </h2>
-                    <p> 공간 사용 규칙은 <a href="https://docs.google.com/document/d/e/2PACX-1vS0muW5qMM0F-Uj3X6Ps-AKuYaRaWEXP_T2ETNGVSpiWabdoB_gMWJ7BiJjJhaLh0istjHqhQVemyOo/pub">이 문서</a>를 참고해주세요. </p>
+                    <p> 공간 사용 규칙은 <a class="soft-red" href="https://docs.google.com/document/d/e/2PACX-1vS0muW5qMM0F-Uj3X6Ps-AKuYaRaWEXP_T2ETNGVSpiWabdoB_gMWJ7BiJjJhaLh0istjHqhQVemyOo/pub">이 문서</a>를 참고해주세요. </p>
                 </div>
             </div>
         </div>
