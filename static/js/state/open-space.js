@@ -4,7 +4,7 @@ calendar.controller('calendarCtrl',function($scope, $http){
 
     $scope.uiConfig = {
         calendar:{
-            defaultView: "month",
+            defaultView: "agendaWeek",
             height: '700',
             editable: false,
             header:{
