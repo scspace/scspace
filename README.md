@@ -43,7 +43,9 @@
 
 7. *web-root*/application/config/iam-key.template.php 를 iam-key.php 로 복사하여 iam_key 를 카이스트 IT개발팀으로부터 단일 인증 서비스 사용 신청하여 획득한 토큰으로 수정하라. 이 단계가 진행되지 않으면, 로그인을 할 수 없다
 
-8. 웹 브라우저로 제대로 작동하는지 확인하고, 이상이 있다면 이전 개발자에게 문의한다
+8. *web-root*/application/config/database.template.php 를 database.php 로 복사하여 database 관련 설정을 입력하라. 이 단계가 진행되지 않으면, 서비스가 작동하지 않는다
+
+9. 웹 브라우저로 제대로 작동하는지 확인하고, 이상이 있다면 이전 개발자에게 문의한다
 
 ## 개발
 
