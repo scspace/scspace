@@ -104,12 +104,12 @@
             <div class="form-group has-feedback" ng-class="{'has-error':form['time[rehearsal_before_from]'].$touched && form['time[rehearsal_before_from]'].$invalid || form['time[rehearsal_before_to]'].$touched && form['time[rehearsal_before_to]'].$invalid}">
                 <label class="col-sm-2 control-label"> 전날 리허설 시간 </label>
                 <div class="col-sm-4">
-                    <input ng-model="time_rehearsal_before_from" type="datetime-local" name="time[rehearsal_before_from]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
+                    <input ng-model="time_rehearsal_before_from" type="datetime-local" name="time[rehearsal_before_from]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
                     <span ng-show="form['time[rehearsal_before_from]'].$touched && form['time[rehearsal_before_from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
 
                 <div class="col-sm-4">
-                    <input ng-model="time_rehearsal_before_to" type="datetime-local" name="time[rehearsal_before_to]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(43) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
+                    <input ng-model="time_rehearsal_before_to" type="datetime-local" name="time[rehearsal_before_to]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(43) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
                     <span ng-show="form['time[rehearsal_before_to]'].$touched && form['time[rehearsal_before_to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_before_from]'].$error.datetimelocal || form['time[rehearsal_before_to]'].$error.datetimelocal"> {{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
