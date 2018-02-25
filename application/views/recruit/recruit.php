@@ -70,8 +70,8 @@
                         <th> 지원 방법 </td>
                         <td colspan="3">
                             <span>
-                                <a  href="/uploads/2017 fall recruit application.docx"
-                                    download="2017 fall recruit application.docx"
+                                <a  href="/uploads/2018 spring recruit application.docx"
+                                    download="2018 spring recruit application.docx"
                                     class="soft-red"
                                     onclick = "ga('send', 'event', {
                                         eventCategory: 'Recruit',
