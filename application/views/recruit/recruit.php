@@ -3,11 +3,10 @@
         <ul class="nav navbar-nav local-domain">
             <li><a href="/recruit"> 리크루팅 </a></li>
         </ul>
-        <!--
         <ul class="nav navbar-nav navbar-right">
             <li>
 
-                <a href="/uploads/2017 recruit application 2.docx" download="2017 recruit application 2.docx" style="padding:0;margin:0">
+                <a href="/uploads/2018 spring recruit application.docx" download="2018 spring recruit application.docx" style="padding:0;margin:0">
                     <button type="button" class="btn btn-primary nav-soft-red-button"
                         onclick = "ga('send', 'event', {
                             eventCategory: 'Recruit',
@@ -19,7 +18,7 @@
                 </a>
 
             </li>
-        </ul>-->
+        </ul>
     </div>
     <div class="container">
         <hr style="margin:0;color:#353535;">
@@ -47,8 +46,6 @@
     }
 </style>
 <main class="container">
-    <h1> 리크루팅 기간이 아닙니다 </h1>
-<!--     
     <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">
@@ -63,11 +60,11 @@
                 <tbody>
                     <tr>
                         <th> 모집 대상 </td>
-                        <td colspan="3"> 3학기 동안 활동 가능한 카이스트 학부생 </td>
+                        <td colspan="3"> 4학기 동안 활동 가능한 카이스트 학부생 </td>
                     </tr>
                     <tr>
                         <th> 지원 분야 </td>
-                        <td colspan="3"> 기획, 사업지원 </td>
+                        <td colspan="3"> 기획, 관리, 책다방, 사업지원, 미디어, 개발 </td>
                     </tr>
                     <tr>
                         <th> 지원 방법 </td>
@@ -80,7 +77,7 @@
                                         eventCategory: 'Recruit',
                                         eventAction: 'Application Download',
                                         eventLabel: 'Application Download'
-                                    })">지원서</a>를 다운로드 받아 scspace.kaist@gmail.com으로 9월 9일까지 제출
+                                    })">지원서</a>를 다운로드 받아 scspace.kaist@gmail.com으로 3월 4일까지 제출
                             </span>
                         </td>
                     </tr>
@@ -88,28 +85,27 @@
                         <th rowspan="4"> 일정 </th>
                         <td> 오픈 공간위 </td>
                         <td colspan="2">
-                            9월 6일 19-21시<br/>
-                            9월 7일 19-23시<br/>
+                            2월 26일 - 3월 4일 19-21시
                             공간위실
                         </td>
                     </tr>
                     <tr>
                         <td> 지원 마감 </td>
                         <td colspan="2">
-                            9월 9일
+                            3월 4일
                         </td>
                     </tr>
                     <tr>
                         <td> 면접 </td>
                         <td colspan="2">
-                            9월 11일 - 9월 12일
+                            3월 5일 - 3월 7일
                         </td>
                     </tr>
 
                     <tr>
                         <td> 합격 발표 </td>
                         <td colspan="2">
-                            9월 13일
+                            3월 9일
                         </td>
                     </tr>
                 </tbody>
@@ -207,20 +203,6 @@
                     </h4>
                     <p>
                         없지만, 2년간 활동이 가능해야합니다
-                    </p>
-
-                    <h4 class="soft-red">
-                        몇 명을 뽑나요?
-                    </h4>
-                    <p>
-                        2명 내외입니다
-                    </p>
-
-                    <h4 class="soft-red">
-                        분야별 인원은 어떻게 되나요?
-                    </h4>
-                    <p>
-                        기획 1명, 사업지원 1명 내외로 뽑으려고 합니다
                     </p>
                 </div>
             </div>
@@ -360,6 +342,6 @@
 
         </div>
 
-    </div> -->
+    </div>
 
 </main>
