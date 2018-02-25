@@ -4,9 +4,9 @@
     <div class="spacing"></div>
     <h1 class="text-center soft-red"> 학생문화공간위원회 홈페이지에 오신 것을 환영합니다. </h1>
 
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-sm-3">
-            <h2> 추가 리크루팅 </h2>
+            <h2> 리크루팅 </h2>
             <hr>
             <table class="table">
                 <thead>
@@ -17,15 +17,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td> 9월 6-7일 19-21시</td>
-                        <td> 오픈 단실 </td>
+                        <td> 2월 26 - 3월 2일 19-21시</td>
+                        <td> 오픈 공간위 </td>
                     </tr>
                     <tr>
-                        <td> 9월 6-9일 </td>
+                        <td> 3월 4일까지 </td>
                         <td> 서류 접수 </td>
                     </tr>
                     <tr>
-                        <td> 9월 11-12일 </td>
+                        <td> 3월 5-7일 </td>
                         <td> 면접 </td>
                     </tr>
                 </tbody>
@@ -52,7 +52,7 @@
                         <td class="col-sm-2 hidden-xs"> <?=$notice['tag']?> </td>
                         <td class="col-sm-8 hidden-xs"> <?=$notice['title']?> </td>
                         <td class="col-sm-2 hidden-xs"> <?=$time_post?> </td>
-     
+
                         <td class="visible-xs">
                             <?=$notice['title']?> <br>
                             <small>#<?=$notice['tag']?> | <?=$time_post?></small>
