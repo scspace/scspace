@@ -6,14 +6,9 @@
         <ul class="nav navbar-nav navbar-right">
             <li>
 
-                <a href="/uploads/2018 spring recruit application.docx" download="2018 spring recruit application.docx" style="padding:0;margin:0">
-                    <button type="button" class="btn btn-primary nav-soft-red-button"
-                        onclick = "ga('send', 'event', {
-                            eventCategory: 'Recruit',
-                            eventAction: 'download 2',
-                            eventLabel: 'Application Download'
-                        })">
-                        지원서 다운로드
+                <a href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1" style="padding:0;margin:0">
+                    <button type="button" class="btn btn-primary nav-soft-red-button">
+                        지원서 바로가기
                     </button>
                 </a>
 
@@ -70,14 +65,9 @@
                         <th> 지원 방법 </td>
                         <td colspan="3">
                             <span>
-                                <a  href="/uploads/2018 spring recruit application.docx"
-                                    download="2018 spring recruit application.docx"
+                                <a  href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1"
                                     class="soft-red"
-                                    onclick = "ga('send', 'event', {
-                                        eventCategory: 'Recruit',
-                                        eventAction: 'Application Download',
-                                        eventLabel: 'Application Download'
-                                    })">지원서</a>를 다운로드 받아 scspace.kaist@gmail.com으로 3월 4일까지 제출
+                                    >지원서</a>를 다운로드 받아 scspace.kaist@gmail.com으로 3월 4일까지 제출
                             </span>
                         </td>
                     </tr>
@@ -85,27 +75,27 @@
                         <th rowspan="4"> 일정 </th>
                         <td> 오픈 공간위 </td>
                         <td colspan="2">
-                            2월 26일 - 3월 2일 19-21시
+                            2월 26일 - 3월 2일, 3월 5일 - 9일 19-21시
                             공간위실
                         </td>
                     </tr>
                     <tr>
                         <td> 지원 마감 </td>
                         <td colspan="2">
-                            3월 4일
+                            3월 11일
                         </td>
                     </tr>
                     <tr>
                         <td> 면접 </td>
                         <td colspan="2">
-                            3월 5일 - 3월 7일
+                            3월 12일 - 3월 14일
                         </td>
                     </tr>
 
                     <tr>
                         <td> 합격 발표 </td>
                         <td colspan="2">
-                            3월 9일
+                            3월 15일
                         </td>
                     </tr>
                 </tbody>
