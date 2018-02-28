@@ -67,7 +67,7 @@
                             <span>
                                 <a  href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1"
                                     class="soft-red"
-                                    >지원서</a>를 다운로드 받아 scspace.kaist@gmail.com으로 3월 4일까지 제출
+                                    >지원서</a>를 3월 11일까지 제출
                             </span>
                         </td>
                     </tr>
