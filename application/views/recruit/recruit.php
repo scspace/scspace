@@ -3,6 +3,7 @@
         <ul class="nav navbar-nav local-domain">
             <li><a href="/recruit"> 리크루팅 </a></li>
         </ul>
+        <!--
         <ul class="nav navbar-nav navbar-right">
             <li>
 
@@ -13,7 +14,7 @@
                 </a>
 
             </li>
-        </ul>
+        </ul> -->
     </div>
     <div class="container">
         <hr style="margin:0;color:#353535;">
@@ -41,7 +42,10 @@
     }
 </style>
 <main class="container">
-    <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
+
+    <h1> 리크루팅 기간이 아닙니다 </h1>
+
+    <!-- <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">
             <h2 class="soft-red"> 개요 </h2>
@@ -332,6 +336,6 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 </main>
