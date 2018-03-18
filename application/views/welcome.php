@@ -4,8 +4,8 @@
     <div class="spacing"></div>
     <h1 class="text-center soft-red"> 학생문화공간위원회 홈페이지에 오신 것을 환영합니다. </h1>
 
-    <!-- <div class="row">
-        <div class="col-sm-3">
+    <div class="row">
+        <!-- <div class="col-sm-3">
             <h2> 리크루팅 </h2>
             <hr>
             <table class="table">
