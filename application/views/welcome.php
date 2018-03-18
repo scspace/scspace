@@ -31,8 +31,8 @@
                 </tbody>
             </table>
             <a href="/recruit" type="button" class="btn soft-red-button btn-lg btn-block"> 리크루팅 바로가기 </a>
-        </div> -->
-        <div class="col-sm-9">
+        </div>
+        <div class="col-sm-9"> -->
             <h2> 공지사항 </h2> <hr>
             <table class="table table-hover">
                 <thead>
