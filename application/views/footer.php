@@ -22,7 +22,7 @@
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2">
 			<ul class="list-unstyled domain">
-				<li> 게시물 부착 </li>
+				<li> 게시물 관리 </li>
 				<li><a href="/poster"> 규정 </a></li>
 				<li><a href="/poster/register"> 신고하기 </a></li>
 			</ul>

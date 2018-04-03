@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top local-nav">
     <div class="container">
         <ul class="nav navbar-nav local-domain">
-            <li><a href="#"> 게시물 부착 규정 </a></li>
+            <li><a href="#"> 게시물 관리 규정 </a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/poster/register"> 신고하기 </a></li>
