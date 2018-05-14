@@ -78,7 +78,7 @@
                         양해서 </h2>
                     <p>
                         기획하고 있는 행사가 큰 소리를 낸다면 미리 장영신학생회관 내부의 단체들에게 서명을 받아야합니다.<br>
-                        <a class="btn btn-primary soft-red-button" href="/static/documents/(170517)소음 양해서" download="(170517)소음 양해서.docx" role="button" style="margin:1em 0 0;color:white;"> 양식 다운로드 </a>
+                        <a class="btn btn-primary soft-red-button" href="/static/documents/(170517)noise" download="(170517)noise.docx" role="button" style="margin:1em 0 0;color:white;"> 양식 다운로드 </a>
                     </p>
                 </div>
             </div>
