@@ -15,7 +15,7 @@ class Rule extends CI_Controller {
 
         $this->load->view('head');
 		$this->load->view('global-nav');
-        $this->load->view('recruit/recruit');
+        $this->load->view('rule');
         $this->load->view('footer');
 
     }
