@@ -34,6 +34,12 @@ class Intro extends CI_Controller {
         $this->load->view('intro/business');
         $this->load->view('footer');
 	}
+  public function rule(){
+		$this->load->view('head');
+		$this->load->view('global-nav');
+        $this->load->view('intro/rule');
+        $this->load->view('footer');
+	}
 	public function member(){
 		$this->load->view('head');
 		$this->load->view('global-nav');
