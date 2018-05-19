@@ -6,10 +6,7 @@
         <ul class="nav navbar-nav navbar-right hidden-xs">
             <li><a href="/intro/committee"> 소개 </a></li>
             <li><a href="/intro/business"> 사업 소개 </a></li>
-            <!--
-            <li><a href="/intro/member"> 위원 소개 </a></li>
-            <li><a href="/intro/story"> 공간위 이야기 </a></li>
-            -->
+            <li><a href="/rule"> 회칙 </a></li>
         </ul>
     </div>
 
