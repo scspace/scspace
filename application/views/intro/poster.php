@@ -4,7 +4,7 @@
             <li><a href="#"> 게시물 관리 규정 </a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/poster/register"> 신고하기 </a></li>
+            <li><a href="https://goo.gl/forms/243GYkJ9LQOzhUqd2"> 신고하기 </a></li>
         </ul>
     </div>
     <div class="container">

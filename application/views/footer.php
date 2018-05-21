@@ -23,7 +23,7 @@
 			<ul class="list-unstyled domain">
 				<li> 게시물 관리 </li>
 				<li><a href="/poster"> 규정 </a></li>
-				<li><a href="/poster/register"> 신고하기 </a></li>
+				<li><a href="https://goo.gl/forms/243GYkJ9LQOzhUqd2"> 신고하기 </a></li>
 			</ul>
 		</div>
 		<div class="clearfix visible-sm"></div>
