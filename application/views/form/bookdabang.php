@@ -86,7 +86,7 @@
             </div>
 
             <div class="col-sm-4">
-                <input ng-model="time_to" type="datetime-local" name="time[to]" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
+                <input ng-model="time_to" type="datetime-local" name="time[to]" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}"  class="form-control time_to" required>
                 <span ng-show="form['time[to]'].$touched && form['time[to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 책다방은 {{dateAfter(7) | date:'MM.dd'}}일에서 {{dateAfter(44) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
