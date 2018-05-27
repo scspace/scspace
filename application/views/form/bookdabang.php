@@ -81,7 +81,7 @@
         <div class="form-group has-feedback" ng-class="{'has-error':form['time[from]'].$touched && form['time[from]'].$invalid || form['time[to]'].$touched && form['time[to]'].$invalid}">
             <label class="col-sm-2 control-label"> 행사 시간 </label>
             <div class="col-sm-4">
-                <input ng-model="time_from" type="datetime-local" name="time[from]" placeholder="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
+                <input ng-model="time_from" type="datetime-local" name="time[from]" placeholder="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
                 <span ng-show="form['time[from]'].$touched && form['time[from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
 
