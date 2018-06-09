@@ -2,7 +2,6 @@
     <div class="container">
         <ul class="nav navbar-nav local-domain">
             <li><a href="/seminar-room"> 세미나실 </a></li>
-            <li class="soft-red"><a href= "/intro/rule">사용 관리 수칙</a>이 개정되었습니다. 꼭 규칙 확인 하신 후 예약해 주세요 </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/seminar-room/state"> 예약 현황 </a></li>
@@ -18,6 +17,8 @@
 
     <form novalidate name="form" class="form-horizontal" action="/reservation/reserve/<?=$space?>" method="post">
         <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
+
+        <p class="soft-red"> <a href= "/intro/rule">사용 관리 수칙</a>이 개정되었습니다. 꼭 규칙 확인 하신 후 예약해 주세요. </p>
 
         <h4> 단체와 행사 </h4>
         <hr>
