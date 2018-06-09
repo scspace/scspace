@@ -68,9 +68,9 @@ class Space_individual_practice_room extends CI_Driver {
 
         if ( ! $this->is_ordered($from, $to)) return '예약은 0분 이상이어야합니다.';
 
-        if ( ! $this->is_valid_start_time($from, $to, 1)) return '개인연습실은 적어도 예약 하루 전 9시까지 예약해야합니다.';
+        if ( ! $this->is_valid_start_time($from, $to, 1)) return '개인연습실은 적어도 예약 하루 전 오후 11시 59분까지 예약해야합니다.';
 
-        if ( ! $this->is_valid_end_time($from, $to, 14)) return '개인연습실은 예약 14일 전 9시부터 예약할 수 있습니다.';
+        if ( ! $this->is_valid_end_time($from, $to, 14)) return '개인연습실은 예약 14일 전부터 예약할 수 있습니다.';
 
 
         $days_covered = $this->splitTime($from, $to);
@@ -93,7 +93,7 @@ class Space_individual_practice_room extends CI_Driver {
                 - $this->time_used('individual_practice_room_1', $second_day)
                 - $this->time_used('individual_practice_room_2', $second_day)
                 - $this->time_used('individual_practice_room_3', $second_day);
-                
+
             if ( ! $this->is_shorter($second_day, $to, $max_duration)) return '개인연습실은 하루에 최대 2시간까지 사용할 수 있습니다.';
 
         } elseif (count($days_covered) == 1) {

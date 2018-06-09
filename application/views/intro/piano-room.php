@@ -65,11 +65,11 @@
             </p>
             <h3> 상시 예약 </h3>
             <ul class="list-unstyled">
-                <li> 사용 14일 전부터 하루 전 오후 9시까지 예약이 가능합니다. </li>
-                <li> 현재는 <span class="soft-red"><?=date('n',strtotime('+1 day')+10800)?>월
-                    <?=date('j',strtotime('+1 day')+10800)?>일</span>부터
-                    <span class="soft-red"><?=date('n',strtotime('+13 day')+10800)?>월
-                    <?=date('j',strtotime('+13 day')+10800)?>일</span>까지의 예약만 가능합니다.
+                <li> 사용 14일 전부터 하루 전 오후 11시 59분까지 예약이 가능합니다. </li>
+                <li> 현재는 <span class="soft-red"><?=date('n',strtotime('+1 day'))?>월
+                    <?=date('j',strtotime('+1 day'))?>일</span>부터
+                    <span class="soft-red"><?=date('n',strtotime('+14 day'))?>월
+                    <?=date('j',strtotime('+14 day'))?>일</span>까지의 예약만 가능합니다.
                 </li>
                 <li> 하루에 최대 <span class="soft-red">2시간</span> 예약할 수 있습니다. </li>
             </ul>

@@ -81,9 +81,9 @@ class Space_seminar_room extends CI_Driver {
 
         if ( ! $this->is_ordered($from, $to)) return '예약은 0분 이상이어야합니다.';
 
-        if ( ! $this->is_valid_start_time($from, $to, 1)) return '세미나실은 적어도 예약 하루 전 9시까지 예약해야합니다.';
+        if ( ! $this->is_valid_start_time($from, $to, 2)) return '세미나실은 적어도 예약 이틀 전 오루 11시 59분까지 예약해야합니다.';
 
-        if ( ! $this->is_valid_end_time($from, $to, 14)) return '세미나실은 예약 14일 전 9시부터 예약할 수 있습니다.';
+        if ( ! $this->is_valid_end_time($from, $to, 14)) return '세미나실은 예약 14일 전부터 예약할 수 있습니다.';
 
 
         $days_covered = $this->splitTime($from, $to);

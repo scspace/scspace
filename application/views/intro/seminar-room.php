@@ -69,10 +69,10 @@
             <h3> 상시 예약 </h3>
             <ul class="list-unstyled">
                 <li>사용 14일 전부터 하루 전 21:00까지 예약이 가능합니다.</li>
-                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+1 day')+10800)?>월
-                    <?=date('j',strtotime('+1 day')+10800)?>일</span>부터
-                    <span class="soft-red"><?=date('n',strtotime('+13 day')+10800)?>월
-                    <?=date('j',strtotime('+13 day')+10800)?>일</span>까지의 예약이 가능합니다.
+                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+2 day'))?>월
+                    <?=date('j',strtotime('+2 day'))?>일</span>부터
+                    <span class="soft-red"><?=date('n',strtotime('+14 day'))?>월
+                    <?=date('j',strtotime('+14 day'))?>일</span>까지의 예약이 가능합니다.
                 </li>
                 <li>하루에 최대 <span class="soft-red">3시간</span> 예약할 수 있습니다.</li>
                 <li>시험기간 전 주와 시험기간에는 상시 예약이 불가능합니다.</li>

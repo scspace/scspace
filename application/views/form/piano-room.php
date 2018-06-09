@@ -39,7 +39,7 @@
             </div>
 
             <div class="col-sm-4">
-                <input ng-model="time_to" type="datetime-local" name="time_to" min="{{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(13) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
+                <input ng-model="time_to" type="datetime-local" name="time_to" min="{{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
                 <span ng-show="form.time_to.$touched && form.time_to.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
 
@@ -54,7 +54,7 @@
             </div>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form.time_from.$touched && form.time_from.$error.required) || (form.time_to.$touched && form.time_to.$error.required)"> 시간을 입력해주세요.</span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form.time_from.$error.datetimelocal || form.time_to.$error.datetimelocal"> {{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
-            <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form.time_from.$error.min || form.time_from.$error.max || form.time_to.$error.min || form.time_to.$error.max"> 현재 피아노실은 {{dateAfter(1) | date:'MM.dd'}}일에서 {{dateAfter(13) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
+            <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form.time_from.$error.min || form.time_from.$error.max || form.time_to.$error.min || form.time_to.$error.max"> 현재 피아노실은 {{dateAfter(1) | date:'MM.dd'}}일에서 {{dateAfter(14) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="validity"> 유효한 시간입니다. </span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="isValidTime == 'invalid'"> {{message}} </span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="responseError == 'true'"> 서버가 응답하지 않아 같은 시간에 예약이 있는지 확인할 수 없습니다. </span>
