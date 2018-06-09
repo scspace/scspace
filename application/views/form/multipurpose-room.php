@@ -2,6 +2,7 @@
     <div class="container">
         <ul class="nav navbar-nav local-domain">
             <li><a href="/multipurpose-room"> 다용도실 </a></li>
+            <li class="soft-red"><a href= "/intro/rule">사용 관리 수칙</a>이 개정되었습니다. 꼭 규칙 확인 하신 후 예약해 주세요 </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/multipurpose-room/state"> 예약 현황 </a></li>
