@@ -18,6 +18,8 @@
         <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
         <input type="hidden" name="space" value="ullim_hall">
 
+        <p class="soft-red"> <a href= "/intro/rule">사용 관리 수칙</a>이 개정되었습니다. 꼭 규칙 확인 하신 후 예약해 주세요. </p>
+
         <section class="form-section">
             <h4> 단체와 행사 </h4>
             <hr>
