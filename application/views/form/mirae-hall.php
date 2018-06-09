@@ -96,53 +96,54 @@
                 <p class="col-sm-offset-2 col-sm-10">
                     <span class="glyphicon glyphicon-exclamation-sign"></span> 리허설 시간은 선택 사항입니다. <br>
                     <span class="glyphicon glyphicon-exclamation-sign"></span> 행사 시간에 <span class="soft-red">뒷정리 시간</span>을 포함시켜주세요. 뒷정리가 미흡할 경우 공연집중기간 후순위 배정의 패널티가 있습니다. <br>
-                    <span class="glyphicon glyphicon-exclamation-sign"></span> 장비를 사용할 경우 <span class="soft-red">{{dateAfter(14) | date:'M월 dd일'}}</span>에서 <span class="soft-red">{{dateAfter(44) | date:'M월 d'}}일</span>까지의 행사만 예약 가능합니다. <br>
-                    <span class="glyphicon glyphicon-exclamation-sign"></span> 장비를 사용하지 않을 경우 <span class="soft-red">{{dateAfter(3) | date:'M월 d'}}일</span>에서 <span class="soft-red">{{dateAfter(44) | date:'M월 d'}}일</span>까지의 행사만 예약 가능합니다.
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> 장비를 사용할 경우 <span class="soft-red">{{dateAfter(10) | date:'M월 dd일'}}</span>에서 <span class="soft-red">{{dateAfter(45) | date:'M월 d'}}일</span>까지의 행사만 예약 가능합니다. <br>
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> 장비를 사용하지 않을 경우 <span class="soft-red">{{dateAfter(2) | date:'M월 d'}}일</span>에서 <span class="soft-red">{{dateAfter(45) | date:'M월 d'}}일</span>까지의 행사만 예약 가능합니다.
                 </p>
             </div>
+
             <div class="form-group has-feedback" ng-class="{'has-error':form['time[rehearsal_before_from]'].$touched && form['time[rehearsal_before_from]'].$invalid || form['time[rehearsal_before_to]'].$touched && form['time[rehearsal_before_to]'].$invalid}">
                 <label class="col-sm-2 control-label"> 전날 리허설 시간 </label>
                 <div class="col-sm-4">
-                <input ng-model="time_rehearsal_before_from" type="datetime-local" name="time[rehearsal_before_from]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
-                <span ng-show="form['time[rehearsal_before_from]'].$touched && form['time[rehearsal_before_from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <input ng-model="time_rehearsal_before_from" type="datetime-local" name="time[rehearsal_before_from]" min="{{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
+                    <span ng-show="form['time[rehearsal_before_from]'].$touched && form['time[rehearsal_before_from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
+
                 <div class="col-sm-4">
-                    <input ng-model="time_rehearsal_before_to" type="datetime-local" name="time[rehearsal_before_to]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(43) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
+                    <input ng-model="time_rehearsal_before_to" type="datetime-local" name="time[rehearsal_before_to]" min="{{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}" max = "{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
                     <span ng-show="form['time[rehearsal_before_to]'].$touched && form['time[rehearsal_before_to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_before_from]'].$error.datetimelocal || form['time[rehearsal_before_to]'].$error.datetimelocal"> {{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_before_from]'].$error.min || form['time[rehearsal_before_from]'].$error.max || form['time[rehearsal_before_to]'].$error.min || form['time[rehearsal_before_to]'].$error.max"> 현재 미래홀 행사의 전날 리허설은 {{dateAfter(2) | date:'MM월 dd'}}일에서 {{dateAfter(43) | date:'MM월 dd'}}일까지 가능합니다. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_before_from]'].$error.datetimelocal || form['time[rehearsal_before_to]'].$error.datetimelocal"> {{dateAfter(1) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_before_from]'].$error.min || form['time[rehearsal_before_from]'].$error.max || form['time[rehearsal_before_to]'].$error.min || form['time[rehearsal_before_to]'].$error.max"> 현재 울림홀 행사의 전날 리허설은 {{dateAfter(1) | date:'MM월 dd'}}일에서 {{dateAfter(44) | date:'MM월 dd'}}일까지 가능합니다. </span>
             </div>
 
             <div class="form-group has-feedback" ng-class="{'has-error':form['time[rehearsal_from]'].$touched && form['time[rehearsal_from]'].$invalid || form['time[rehearsal_to]'].$touched && form['time[rehearsal_to]'].$invalid}">
                 <label class="col-sm-2 control-label"> 리허설 시간 </label>
                 <div class="col-sm-4">
-                    <input ng-model="time_rehearsal_from" type="datetime-local" name="time[rehearsal_from]" min="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
+                    <input ng-model="time_rehearsal_from" type="datetime-local" name="time[rehearsal_from]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from">
                     <span ng-show="form['time[rehearsal_from]'].$touched && form['time[rehearsal_from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-4">
-                    <input ng-model="time_rehearsal_to" type="datetime-local" name="time[rehearsal_to]" min="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
+                    <input ng-model="time_rehearsal_to" type="datetime-local" name="time[rehearsal_to]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to">
                     <span ng-show="form['time[rehearsal_to]'].$touched && form['time[rehearsal_to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_from]'].$error.datetimelocal || form['time[rehearsal_to]'].$error.datetimelocal"> {{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_from]'].$error.min || form['time[rehearsal_from]'].$error.max || form['time[rehearsal_to]'].$error.min || form['time[rehearsal_to]'].$error.max"> 현재 미래홀 행사의 리허설은 {{dateAfter(3) | date:'MM월 dd'}}일에서 {{dateAfter(44) | date:'MM월 dd'}}일까지 가능합니다. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_from]'].$error.datetimelocal || form['time[rehearsal_to]'].$error.datetimelocal"> {{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[rehearsal_from]'].$error.min || form['time[rehearsal_from]'].$error.max || form['time[rehearsal_to]'].$error.min || form['time[rehearsal_to]'].$error.max"> 현재 울림홀 행사의 리허설은 {{dateAfter(2) | date:'MM월 dd'}}일에서 {{dateAfter(45) | date:'MM월 dd'}}일까지 가능합니다. </span>
             </div>
 
             <div class="form-group has-feedback" ng-class="{'has-error':form['time[from]'].$touched && form['time[from]'].$invalid || form['time[to]'].$touched && form['time[to]'].$invalid}">
                 <label class="col-sm-2 control-label"> 행사 시간 </label>
                 <div class="col-sm-4">
-                    <input ng-model="time_from" type="datetime-local" name="time[from]" min="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
+                    <input ng-model="time_from" type="datetime-local" name="time[from]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
                     <span ng-show="form['time[from]'].$touched && form['time[from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-4">
-                    <input ng-model="time_to" type="datetime-local" name="time[to]" min="{{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
+                    <input ng-model="time_to" type="datetime-local" name="time[to]" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
                     <span ng-show="form['time[to]'].$touched && form['time[to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form['time[from]'].$touched && form['time[from]'].$error.required) || (form['time[to]'].$touched && form['time[to]'].$error.required)"> 행사 시간을 입력해주세요.</span>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.datetimelocal || form['time[to]'].$error.datetimelocal"> {{dateAfter(3) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
-                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 미래홀 행사는 {{dateAfter(3) | date:'MM월 dd'}}일에서 {{dateAfter(44) | date:'MM월 dd'}}일까지 예약 가능합니다. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.datetimelocal || form['time[to]'].$error.datetimelocal"> {{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
+                <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 울림홀 행사는 {{dateAfter(2) | date:'MM월 dd'}}일에서 {{dateAfter(45) | date:'MM월 dd'}}일까지 예약 가능합니다. </span>
             </div>
-
         </section>
 
         <section class="form-section">

@@ -67,34 +67,39 @@
                 행사 대상이 제한된 경우 학생문화공간위원회의 심의를 거쳐 행사를 진행할 수 있습니다.
                 리허설을 포함하여 <span class="soft-red">일주일<sup>*</sup>에 2번</span>까지 예약할 수 있습니다.
             </p>
+            <p>
+              전체 학내 구성원을 대상으로 하는 행사의 경우 예약하고자 하는 날로부터 45일 전 00시00분부터 예약이 가능하며 그 이외의 행사의 경우 30일 전 00시00분부터 예약이 가능합니다.
+            </p>
+            <p>
+               전체 학내 구성원을 대상으로 하는 행사의 경우 이를 증빙할 수 있는 자료(홍보 포스터 등)를 행사 3일 전 23시59분까지 제시하여야 하며 제시하지 않은 경우 행사 취소 및 불이익이 가해질 수 있습니다.
+            </p>
 
             <h4> 장비 사용 시 </h4>
             <ul class="list-unstyled">
-                <li>사용 45일 전부터 14일 전 21:00까지 예약이 가능합니다.</li>
-                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+14 day')+10800)?>월
-                    <?=date('j',strtotime('+14 day')+10800)?>일</span>부터
-                    <span class="soft-red"><?=date('n',strtotime('+44 day')+10800)?>월
-                    <?=date('j',strtotime('+44 day')+10800)?>일</span>까지의 예약이 가능합니다.
+                <li>사용 45일 전부터 10일 전 23:59까지 예약이 가능합니다.</li>
+                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+10 day'))?>월
+                    <?=date('j',strtotime('+10 day'))?>일</span>부터
+                    <span class="soft-red"><?=date('n',strtotime('+45 day'))?>월
+                    <?=date('j',strtotime('+45 day'))?>일</span>까지의 예약이 가능합니다.
                 </li>
                 <li>
                     장비 사용 시 <span class="soft-red">근로학생</span>이 배정됩니다.
                     예약 승인 시 근로 장학생의 연락처가 제공되며 리허설과 행사에서 도움을 받을 수 있습니다.
                     주말의 경우에는 근로 장학생에게 시간당 12,000원의 수당을 지급해야합니다.
-                    단, 공연집중기간에는 수당 지급 없이 근로 장학생의 도움을 받을 수 있습니다.
                 </li>
                 <li> 시험기간 1주 전부터 시험 종료일까지는 장비를 이용하는 예약이 불가능합니다. </li>
-                <li> 예약의 취소는 행사 14일 전 오후 9시까지 학생문화공간위원회에 통보해야 합니다. </li>
+                <li> 예약의 취소는 행사 10일 전 23시 59분까지 학생문화공간위원회에 통보해야 합니다. </li>
             </ul>
 
             <h4> 장비 미사용 시 </h4>
             <ul class="list-unstyled">
-                <li>사용 45일 전부터 3일 전 21:00까지 예약이 가능합니다.</li>
-                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+3 day')+10800)?>월
-                    <?=date('j',strtotime('+3 day')+10800)?>일</span>부터
-                    <span class="soft-red"><?=date('n',strtotime('+44 day')+10800)?>월
-                    <?=date('j',strtotime('+44 day')+10800)?>일</span>까지의 예약이 가능합니다.
+                <li>사용 45일 전부터 2일 전 21:00까지 예약이 가능합니다.</li>
+                <li>현재는 <span class="soft-red"><?=date('n',strtotime('+2 day'))?>월
+                    <?=date('j',strtotime('+2 day'))?>일</span>부터
+                    <span class="soft-red"><?=date('n',strtotime('+45 day'))?>월
+                    <?=date('j',strtotime('+45 day'))?>일</span>까지의 예약이 가능합니다.
                 </li>
-                <li> 예약의 취소는 행사 하루 전 오후 9시까지 학생문화공간위원회에 통보해야 합니다.</li>
+                <li> 예약의 취소는 행사 2일 전 23시 59분까지 학생문화공간위원회에 통보해야 합니다.</li>
             </ul>
             <small> * 일주일의 시작은 월요일입니다. </small>
 

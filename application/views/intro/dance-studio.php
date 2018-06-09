@@ -90,15 +90,15 @@
             <div class="spacing"></div>
             <div class="row">
                 <div class="col-xs-4 col-sm-2">
-                    <img src="/static/images/icon/drink_ok.png" alt="음료 반입 가능" class="intro-icon center-block"/>
+                    <img src="/static/images/icon/drink_no.png" alt="음료 반입 불가" class="intro-icon center-block"/>
                     <p class="text-center margin-heading">
-                        <small>음료 반입 가능</small>
+                        <small>음료 반입 불가</small>
                     </p>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <img src="/static/images/icon/snack_ok.png" alt="스낵 반입 가능" class="intro-icon center-block"/>
+                    <img src="/static/images/icon/snack_no.png" alt="스낵 반입 불가" class="intro-icon center-block"/>
                     <p class="text-center margin-heading">
-                        <small>스낵 반입 가능</small>
+                        <small>스낵 반입 불가</small>
                     </p>
                 </div>
                 <div class="col-xs-4 col-sm-2">
