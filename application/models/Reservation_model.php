@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- * 
+ *
  */
 
 class Reservation_model extends CI_Model {
@@ -17,7 +17,7 @@ class Reservation_model extends CI_Model {
             $this->db->join('user', 'reservation.reserver_id = user.student_id');
             $this->db->order_by('state');
             $this->db->order_by("time_request", "asc");
-            $this->db->where('TIMESTAMPDIFF(DAY, time_from, NOW()) < 50');
+            $this->db->where('TIMESTAMPDIFF(DAY, time_from, NOW()) < 100');
             return $this->db->get('reservation', $limit, $offset);
 
         } else {
