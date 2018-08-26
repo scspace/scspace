@@ -66,12 +66,12 @@
         <div class="form-group has-feedback" ng-class="{'has-error':form.time_from.$touched && form.time_from.$invalid || form.time_to.$touched && form.time_to.$invalid }">
             <label for="time" class="col-sm-2 control-label"> 행사 시간 </label>
             <div class="col-sm-4">
-                <input ng-model="time_from" type="datetime-local" name="time_from" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
+                <input ng-model="time_from" type="datetime-local" name="time_from" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(15) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
                 <span ng-show="form.time_from.$touched && form.time_from.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
 
             <div class="col-sm-4">
-                <input ng-model="time_to" type="datetime-local" name="time_to" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(14) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
+                <input ng-model="time_to" type="datetime-local" name="time_to" min="{{dateAfter(2) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(15) | date:'yyyy-MM-ddTHH:mm'}}" placeholder="{{dateAfter(15) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
                 <span ng-show="form.time_to.$touched && form.time_to.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form.time_from.$touched && form.time_from.$error.required) || (form.time_to.$touched && form.time_to.$error.required)"> 행사 시간을 입력해주세요.</span>
