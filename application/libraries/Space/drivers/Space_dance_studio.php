@@ -83,7 +83,7 @@ class Space_dance_studio extends CI_Driver {
 
         if ( ! $this->is_valid_start_time($from, $to, 2)) return '무예실은 적어도 예약 이틀 전 오후 11시 59분까지 예약해야합니다.';
 
-        if ( ! $this->is_valid_end_time($from, $to, 14)) return '무예실은 예약 14일 전부터 예약할 수 있습니다.';
+        if ( ! $this->is_valid_end_time($from, $to, 15)) return '무예실은 예약 14일 전부터 예약할 수 있습니다.';
 
 
         $days_covered = $this->splitTime($from, $to);
