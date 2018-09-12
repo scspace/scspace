@@ -43,9 +43,9 @@
 </style>
 <main class="container">
 
-    <!-- <h1> 리크루팅 기간이 아닙니다 </h1> -->
+    <h1> 리크루팅 기간이 아닙니다 </h1>
 
-    <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
+    <!-- <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">
             <h2 class="soft-red"> 개요 </h2>
@@ -63,7 +63,7 @@
                     </tr>
                     <tr>
                         <th> 지원 분야 </td>
-                        <td colspan="3"> 관리, 사업지원</td>
+                        <td colspan="3"> 기획, 관리, 책다방, 사업지원, 미디어, 개발 </td>
                     </tr>
                     <tr>
                         <th> 지원 방법 </td>
@@ -71,7 +71,7 @@
                             <span>
                                 <a  href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1"
                                     class="soft-red"
-                                    >지원서</a>를 8월 30일까지 제출
+                                    >지원서</a>를 3월 11일까지 제출
                             </span>
                         </td>
                     </tr>
@@ -79,28 +79,28 @@
                         <th rowspan="4"> 일정 </th>
                         <td> 오픈 공간위 </td>
                         <td colspan="2">
-                            8월 27일 - 30일 19-21시
+                            2월 26일 - 3월 2일, 3월 5일 - 9일 19-21시
                             공간위실
                         </td>
                     </tr>
                     <tr>
                         <td> 지원 마감 </td>
                         <td colspan="2">
-                            8월 30일
+                            3월 11일
                         </td>
                     </tr>
                     <tr>
                         <td> 면접 </td>
                         <td colspan="2">
-                            8월 31일
+                            3월 12일 - 3월 14일
                         </td>
                     </tr>
 
                     <tr>
-                        <!-- <td> 합격 발표 </td>
+                        <td> 합격 발표 </td>
                         <td colspan="2">
-                            월 일
-                        </td> -->
+                            3월 15일
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -214,13 +214,13 @@
                         괜찮습니다! 보유 스킬은 보다 전문적인 활동이 가능한 지원자를 보고자 하는 것이니 부담 가지지 않으셔도 됩니다.
                     </p>
 
-                    <!-- <h4 class="soft-red">
+                    <h4 class="soft-red">
                         지원서 이외에 제출해야 하는 서류가 있나요?
                     </h4>
                     <p>
                         미디어팀 지원자의 경우, 만약 본인의 작품이 있다면 작품을 5개 이내로 정리하여 지원서와 같이 메일로 보내주세요.
                         개발팀 지원자의 경우, 만약 본인의 개발 자료가 있다면 정리하여 지원서와 같이 메일로 보내주세요.
-                    </p> -->
+                    </p>
                 </div>
             </div>
 
@@ -336,6 +336,6 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 </main>
