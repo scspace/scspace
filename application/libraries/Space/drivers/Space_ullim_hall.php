@@ -137,7 +137,7 @@ class Space_ullim_hall extends CI_Driver {
             if ( ! $this->is_valid_start_time($from, $to, 2)) return '장비를 사용하지 않을 경우 울림홀은 적어도 예약 2일 전 오후 11시 59분까지 예약해야합니다.';
         }
 
-        if ( ! $this->is_valid_end_time($from, $to, 45)) return '울림홀은 예약 45일 전부터 예약할 수 있습니다.';
+        // if ( ! $this->is_valid_end_time($from, $to, 45)) return '울림홀은 예약 45일 전부터 예약할 수 있습니다.';
 
         $this->ci->db->where('space', $space);
         $this->ci->db->where('time_from <', $to);
