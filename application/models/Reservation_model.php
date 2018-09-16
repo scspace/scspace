@@ -17,7 +17,7 @@ class Reservation_model extends CI_Model {
             $this->db->join('user', 'reservation.reserver_id = user.student_id');
             $this->db->order_by('state');
             $this->db->order_by("time_request", "asc");
-            $this->db->where('TIMESTAMPDIFF(DAY, time_from, NOW()) < 90');
+            $this->db->where('TIMESTAMPDIFF(DAY, time_from, NOW()) < 30');
             return $this->db->get('reservation', $limit, $offset);
 
         } else {
