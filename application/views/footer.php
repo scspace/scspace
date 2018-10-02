@@ -63,6 +63,7 @@
 	</div>
 	<div class="container">
 		<p><a href="/humans.html"> 만든 사람들 </a></p>
+		<p><a href="/i18ntest"> 테스트 </a></p>
 	</div>
 </footer>
 
