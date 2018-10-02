@@ -12,4 +12,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
+$hook['post_controller_constructor'][] = array(
+                                'class'    => 'I18n',
+                                'function' => 'auto_load_language',
+                                'filename' => 'I18n.php',
+                                'filepath' => 'libraries'
+                                );
+
 ?>
