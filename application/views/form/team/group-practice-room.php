@@ -149,7 +149,7 @@
                             <div class="row">
                                 <label class="col-xs-3 col-sm-2 control-label second-label"> 은행 </label>
                                 <div class="col-xs-9 col-sm-10">
-                                    <p class="form-control-static"> <?=$deposit['bank']?> </p>
+                                    <p class="form-control-static"> 우리 </p>
                                 </div>
                             </div>
 
@@ -160,7 +160,7 @@
                             <div class="row">
                                 <label class="col-xs-3 col-sm-2 control-label second-label"> 계좌 </label>
                                 <div class="col-xs-9 col-sm-10">
-                                    <p class="form-control-static"> <?=$deposit['account']?> </p>
+                                    <p class="form-control-static"> 1002-059-048744 </p>
                                 </div>
                             </div>
 
@@ -171,7 +171,7 @@
                             <div class="row">
                                 <label class="col-xs-3 col-sm-2 control-label second-label"> 예금주 </label>
                                 <div class="col-xs-9 col-sm-10">
-                                    <p class="form-control-static"> <?=$deposit['holder']?> </p>
+                                    <p class="form-control-static"> 전남수 </p>
                                 </div>
                             </div>
 
