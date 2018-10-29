@@ -244,18 +244,18 @@
                 <label class="col-sm-2 control-label"> 입금 계좌 </label>
                 <div class="col-sm-2 col-md-1 field-first">
                     <p class="input-first form-control-static">
-                        <?=$account['holder']?> <br>
+                        전남수 <br>
                     </p>
 
                 </div>
                 <div class="col-sm-2 col-md-1 field-middle">
                     <p class="input-middle form-control-static">
-                        <?=$account['bank']?>
+                        우리
                     </p>
                 </div>
                 <div class="col-sm-4 col-md-3 field-last">
                     <p class="input-last form-control-static">
-                        <?=$account['account']?>
+                        1002-059-048744
                     </p>
                 </div>
             </div>
