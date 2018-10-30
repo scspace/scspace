@@ -137,7 +137,7 @@ class Ask extends CI_Controller {
 		$this->lang->load('general','korean');
 		if (!isset($_SESSION['type'])){
 			$this->load->helper('url');
-			echo '<script type="text/javascript">alert("먼저 로그인해 주세요.");location.href="/login";</script>';
+			echo '<script type="text/javascript">alert("먼저 로그인해 주세요.");location.href="/login_error";</script>';
 		}
 
 		$this->load->view('head');

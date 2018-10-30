@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- * 
+ *
  */
 
 class Reservation extends CI_Controller {
@@ -15,7 +15,7 @@ class Reservation extends CI_Controller {
         parent::__construct();
 		$this->lang->load('general','korean');
 		if (!isset($_SESSION['type'])){
-			echo "<script type='text/javascript'>alert('예약하기 위해서 먼저 로그인해 주세요.');location.href='/login';</script>";
+			echo "<script type='text/javascript'>alert('예약하기 위해서 먼저 로그인해 주세요.');location.href='/login_error';</script>";
 		}
 		$this->load->database();
     }

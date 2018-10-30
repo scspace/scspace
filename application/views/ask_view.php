@@ -120,7 +120,7 @@ $time_post_readable = date_create_from_format('Y-m-d H:i:s',$ask->time_post)->fo
             <?php endif;
                 else:?>
             <p class="text-center">
-                댓글을 달기 위해 먼저 <mark><a href="/login">로그인</a></mark>해주세요.
+                댓글을 달기 위해 먼저 <mark><a href="/login_error">로그인</a></mark>해주세요.
             </p>
             <?php endif;?>
 
