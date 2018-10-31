@@ -68,9 +68,8 @@ class Login extends CI_Controller {
 		);
 
 		$this->session->set_userdata($session);
-		$session_id = $this->session->userdata('name');
-		print_r($session_id);
 		$this->load->helper('url');
+		print_r($_SESSION['referer']);
 		// redirect($_SESSION['referer']);
 	}
 
