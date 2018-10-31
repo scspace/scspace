@@ -2,7 +2,6 @@
     <div class="container">
         <a href="/"><img src="/static/logo_title.svg" alt="학생문화공간위원회 로고" style="height:40px;margin:10px 0"/></a>
         <ul class="nav navbar-nav navbar-right" style="margin-top:11px;">
-          <?php echo ($this->session->userdata('name')): ?>
             <?php if ($this->session->userdata('is_login') == 1): ?>
             <li><a href="/mypage"> 마이페이지 </a></li>
 
