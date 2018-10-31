@@ -67,11 +67,11 @@ class Login extends CI_Controller {
 			'type' => $type
 		);
 
-		$this->load->view('session',['session'=>$session]);
+		$this->load->view('recruit/recruit',['session'=>$session]);
 
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
-		redirect('/session.php');
+		redirect('recruit/recruit');
 	}
 
 	public function logout(){
