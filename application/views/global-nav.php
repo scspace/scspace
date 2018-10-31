@@ -2,6 +2,7 @@
     <div class="container">
         <a href="/"><img src="/static/logo_title.svg" alt="학생문화공간위원회 로고" style="height:40px;margin:10px 0"/></a>
         <ul class="nav navbar-nav navbar-right" style="margin-top:11px;">
+            <?php print_r($this->session->all_userdata()); ?>
             <?php if (base64_decode(urldecode($this->session->userdata('name'))) != NULL): ?>
             <li><a href="/mypage"> 마이페이지 </a></li>
 

@@ -67,7 +67,7 @@ class Login extends CI_Controller {
 			'type' => $type,
 		);
 
-		$Data = urlencode( base64_encode($session) );
+		$Data = urlencode(base64_encode($session));
 		$this->session->set_userdata($Data);
 		// print_r($this->session->all_userdata());
 		$this->load->helper('url');
