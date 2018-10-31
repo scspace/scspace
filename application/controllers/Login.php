@@ -52,9 +52,6 @@ class Login extends CI_Controller {
 		$return = $xml->Body->verificationResponse->return;
 
 		$name = (string)$return->ku_kname;
-		if(empty($name)) {
-			redirect('https://iam.kaist.ac.kr/iamps/requestLogin.do');
-		}
 		$student_id = (string)$return->ku_std_no;
 		$email = (string)$return->mail;
 		$phone = (string)$return->mobile;
@@ -69,6 +66,8 @@ class Login extends CI_Controller {
 			'phone' => $phone,
 			'type' => $type
 		);
+
+		$this->load->view('welcome', $session);
 
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
