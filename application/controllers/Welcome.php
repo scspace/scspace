@@ -20,8 +20,8 @@ class Welcome extends CI_Controller {
 		$this->lang->load('general','korean');
 		$this->load->view('head');
 		$this->load->view('global-nav');
-		// $this->load->view('welcome', array('notices'=>$notices));
-		print_r($this->session->all_userdata());
+		$this->load->view('welcome', array('notices'=>$notices));
+		// print_r($this->session->all_userdata());
 		$this->load->view('footer');
 	}
 }
