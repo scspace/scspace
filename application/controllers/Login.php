@@ -69,8 +69,7 @@ class Login extends CI_Controller {
 
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
-		print_r($_SESSION['referer']);
-		// redirect($_SESSION['referer']);
+		redirect($_SESSION['referer']);
 	}
 
 	public function logout(){
