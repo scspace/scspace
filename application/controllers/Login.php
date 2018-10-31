@@ -55,6 +55,10 @@ class Login extends CI_Controller {
 		$student_id = (string)$return->ku_std_no;
 		$email = (string)$return->mail;
 		$phone = (string)$return->mobile;
+		print_r($name);
+		print_r($student_id);
+		print_r($email);
+		print_r($phone);
 
 		$this->load->model('user_model');
 		$type = $this->user_model->update($student_id, $name, $phone, $email);
