@@ -67,8 +67,7 @@ class Login extends CI_Controller {
 			'type' => $type
 		);
 
-		$this->load->view('recruit/recruit',['session'=>$session]);
-
+		print_r($session);
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
 		// redirect('recruit');
