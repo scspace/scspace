@@ -11,7 +11,7 @@
 
             <li> <a href="/login/logout"> 로그아웃 </a></li>
             <?php else: ?>
-            <li><a href="/login_error"> 로그인 </a></li>
+            <li><a href="/login"> 로그인 </a></li>
             <?php endif; ?>
 
             <!--<li><a href="#"> <span class="glyphicon glyphicon-globe"></span> </a></li>-->
