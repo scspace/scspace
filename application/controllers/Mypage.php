@@ -15,7 +15,7 @@ class Mypage extends CI_Controller {
         parent::__construct();
 		$this->lang->load('general','korean');
 		if (!isset($_SESSION['type'])){
-			echo "<script type='text/javascript'>alert('마이페이지에 접속하기 위해 먼저 로그인해 주세요.');location.href='/login';</script>";
+			echo "<script type='text/javascript'>alert('마이페이지에 접속하기 위해 먼저 로그인해 주세요.');location.href='/login_error';</script>";
 		}
     }
 
