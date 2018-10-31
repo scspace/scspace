@@ -2,10 +2,10 @@
     <div class="container">
         <a href="/"><img src="/static/logo_title.svg" alt="학생문화공간위원회 로고" style="height:40px;margin:10px 0"/></a>
         <ul class="nav navbar-nav navbar-right" style="margin-top:11px;">
-            <?php if ($this->session->flashdata('name') != NULL): ?>
+            <?php if ($this->session->userdata('name') != NULL): ?>
             <li><a href="/mypage"> 마이페이지 </a></li>
 
-            <?php if ($this->session->flashdata('type') == 'admin'): ?>
+            <?php if ($this->session->userdata('type') == 'admin'): ?>
             <li><a href="/manage"> 관리 </a></li>
             <?php endif; ?>
 
