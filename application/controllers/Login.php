@@ -64,13 +64,13 @@ class Login extends CI_Controller {
 			'student_id' => $student_id,
 			'email' => $email,
 			'phone' => $phone,
-			'type' => $type
+			'type' => $type,
+			'is_login' => 1
 		);
 
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
-		print_r($_SESSION['referer']);
-		// redirect($_SESSION['referer']);
+		redirect($_SESSION['referer']);
 	}
 
 	public function logout(){
