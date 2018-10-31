@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Yujin Kim <yujin.gaya@gmail.com>
  * @copyright Copyright (c) 학생문화공간위원회
- *
+ * 
  */
 
 class Welcome extends CI_Controller {
@@ -21,7 +21,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('head');
 		$this->load->view('global-nav');
 		$this->load->view('welcome', array('notices'=>$notices));
-		// print_r($this->session->all_userdata());
 		$this->load->view('footer');
 	}
 }

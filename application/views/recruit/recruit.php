@@ -44,6 +44,7 @@
 <main class="container">
 
     <h1> 리크루팅 기간이 아닙니다 </h1>
+
     <!-- <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">

@@ -15,7 +15,7 @@ class Team extends CI_Controller {
         parent::__construct();
 		$this->lang->load('general','korean');
 		if (!isset($_SESSION['type'])){
-			echo "<script type='text/javascript'>alert('팀을 등록하기 위해 먼저 로그인해 주세요.');location.href='/login_error';</script>";
+			echo "<script type='text/javascript'>alert('팀을 등록하기 위해 먼저 로그인해 주세요.');location.href='/login';</script>";
 		}
 		$this->load->database();
     }

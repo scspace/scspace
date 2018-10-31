@@ -15,7 +15,6 @@ class Login extends CI_Controller {
 
 		$this->load->helper('url');
 		$this->load->library('user_agent');
-		$this->load->library('session');
 
 		$_SESSION['referer'] = $this->agent->referrer();;
 		$this->session->mark_as_flash('referer');
@@ -63,13 +62,12 @@ class Login extends CI_Controller {
 		$session = array(
 			'name' => $name,
 			'student_id' => $student_id,
-			// 'email' => $email,
-			// 'phone' => $phone,
+			'email' => $email,
+			'phone' => $phone,
 			'type' => $type
 		);
 
 		$this->session->set_userdata($session);
-		// print_r($this->session->all_userdata());
 		$this->load->helper('url');
 		redirect($_SESSION['referer']);
 	}
