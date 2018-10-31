@@ -36,7 +36,7 @@ class Login extends CI_Controller {
 				<soapenv:Header/>
 				<soapenv:Body>
 					<ser:verification>
-						<cookieValue>'.$cookie_value.'</cookieValue>
+						<cookieValue> HelloWorld </cookieValue>
 						<publicKeyStr> HelloWorld </publicKeyStr>
 					</ser:verification>
 				</soapenv:Body>
