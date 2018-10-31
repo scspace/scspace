@@ -62,13 +62,12 @@ class Login extends CI_Controller {
 		$session = array(
 			'name' => $name,
 			'student_id' => $student_id,
-			'email' => $email,
-			'phone' => $phone,
-			'type' => $type,
+			// 'email' => $email,
+			// 'phone' => $phone,
+			'type' => $type
 		);
 
-		$Data = urlencode(base64_encode($session));
-		$this->session->set_userdata($Data);
+		$this->session->set_userdata($session);
 		// print_r($this->session->all_userdata());
 		$this->load->helper('url');
 		redirect($_SESSION['referer']);
