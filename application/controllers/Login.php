@@ -52,6 +52,7 @@ class Login extends CI_Controller {
 		$return = $xml->Body->verificationResponse->return;
 
 		$name = (string)$return->ku_kname;
+		echo "<script>alert(\"이렇게 띄우면 되자나\");</script>";
 		$student_id = (string)$return->ku_std_no;
 		$email = (string)$return->mail;
 		$phone = (string)$return->mobile;
