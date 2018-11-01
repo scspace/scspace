@@ -13,7 +13,7 @@
             <?php else: ?>
             <li><a href="/login"> 로그인 </a></li>
             <?php endif; ?>
-            <?php $this->session->all_userdata(); ?>
+            <?php echo $this->session->all_userdata(); ?>
             <!--<li><a href="#"> <span class="glyphicon glyphicon-globe"></span> </a></li>-->
         </ul>
     </div>
