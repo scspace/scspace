@@ -28,7 +28,6 @@ class Login extends CI_Controller {
 	}
 
 	public function process(){
-		print_r($_SESSION['referer']);
 		$this->load->helper('cookie');
 		$cookie_value = get_cookie('SATHTOKEN', TRUE);
 		$this->config->load('iam-key');
