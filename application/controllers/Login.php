@@ -16,7 +16,8 @@ class Login extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->library('user_agent');
 
-		$_SESSION['referer'] = $this->agent->referrer();;
+		$_SESSION['referer'] = $this->agent->referrer();
+		print_r($this->session->all_userdata());
 		$this->session->mark_as_flash('referer');
 		print_r($this->session->all_userdata());
 		if ($this->session->userdata('name') !== null){
