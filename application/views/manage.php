@@ -18,7 +18,7 @@ function spaceToName($space){
 			<tr>
 	            <th> 공간 </th>
 				<th> 예약자 </th>
-				<th> 예약 di </th>
+				<th> 예약 id </th>
 				<th> 시간 </th>
 				<th> 예약한 시간 </th>
 				<th> 상태 </th>
