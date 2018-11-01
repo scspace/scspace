@@ -18,7 +18,7 @@ class Login extends CI_Controller {
 
 		$_SESSION['referer'] = $this->agent->referrer();;
 		$this->session->mark_as_flash('referer');
-		echo $this->session->all_userdata();
+		print_r $this->session->all_userdata();
 		if ($this->session->userdata('name') !== null){
 			// redirect($_SESSION['referer']);
 		} else {
