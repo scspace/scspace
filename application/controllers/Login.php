@@ -19,9 +19,9 @@ class Login extends CI_Controller {
 		$_SESSION['referer'] = $this->agent->referrer();;
 		$this->session->mark_as_flash('referer');
 		if ($this->session->userdata('name') !== null){
-			redirect($_SESSION['referer']);
+			// redirect($_SESSION['referer']);
 		} else {
-			redirect('https://iam.kaist.ac.kr/iamps/requestLogin.do');
+			// redirect('https://iam.kaist.ac.kr/iamps/requestLogin.do');
 		}
 	}
 
