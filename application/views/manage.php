@@ -18,6 +18,7 @@ function spaceToName($space){
 			<tr>
 	            <th> 공간 </th>
 				<th> 예약자 </th>
+				<th> 예약 di </th>
 				<th> 시간 </th>
 				<th> 예약한 시간 </th>
 				<th> 상태 </th>
@@ -49,6 +50,7 @@ function spaceToName($space){
 			<tr id="row<?=$reservation['id']?>" class="pointer" data-toggle="modal" data-target="#<?=$reservation['id']?>">
 				<td class="hidden-xs"><?=$this->lang->line($reservation['space'])?></td>
 				<td class="hidden-xs"><?=$reservation['name']?></td>
+				<td class="hidden-xs"><?=$reservation['id']?></td>
 				<td class="hidden-xs"><?=$time_from?> ~ <?=$time_to?></td>
 				<td class="hidden-xs"><?=$time_request?></td>
 				<td class="state hidden-xs"><span class="<?=$color?> circle"></span><?=$this->lang->line($reservation['state'])?></td>
