@@ -19,15 +19,16 @@ class Login extends CI_Controller {
 		$_SESSION['referer'] = $this->agent->referrer();
 		// print_r($this->session->all_userdata());
 		$this->session->mark_as_flash('referer');
-		print_r($_SESSION['referer']);
+		// print_r($_SESSION['referer']);
 		if ($this->session->userdata('name') !== null){
-			// redirect($_SESSION['referer']);
+			redirect($_SESSION['referer']);
 		} else {
-			// redirect('https://iam.kaist.ac.kr/iamps/requestLogin.do');
+			redirect('https://iam.kaist.ac.kr/iamps/requestLogin.do');
 		}
 	}
 
 	public function process(){
+		print_r($_SESSION['referer']);
 		$this->load->helper('cookie');
 		$cookie_value = get_cookie('SATHTOKEN', TRUE);
 		$this->config->load('iam-key');
@@ -71,7 +72,7 @@ class Login extends CI_Controller {
 
 		$this->session->set_userdata($session);
 		$this->load->helper('url');
-		redirect($_SESSION['referer']);
+		// redirect($_SESSION['referer']);
 	}
 
 	public function logout(){
