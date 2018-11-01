@@ -3,6 +3,7 @@
 <main class="container">
     <div class="spacing"></div>
     <h1 class="text-center soft-red"> 학생문화공간위원회 홈페이지에 오신 것을 환영합니다. </h1>
+    <h4 class="text-center soft-red"> 이제 제대로 로그인 가능합니다. 서비스에 불편을 드려 죄송합니다. </h4>
 
     <div class="row">
         <!-- <div class="col-sm-3">
