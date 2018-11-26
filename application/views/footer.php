@@ -40,7 +40,6 @@
 				<li> 묻고 답하기 </li>
 				<li><a href="/ask"> 문의 목록 </a></li>
 				<li><a href="/ask/write"> 문의하기 </a></li>
-				<li><a href="/repair"> 사설 수리 <li>
 			</ul>
 		</div>
 		<div class="col-xs-6 col-sm-4 col-md-2">
