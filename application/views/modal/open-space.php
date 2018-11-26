@@ -3,7 +3,6 @@
 $content = json_decode($reservation['content'], TRUE);
 $that = $this;
 $format = function($time) use ($that) {
-    print_r($time);
     $time = date_create_from_format('U',$that->space->toStamp($time));
     $time->setTimeZone(new DateTimeZone('Asia/Seoul'));
     return $time->format('n월 j일 G:i');
