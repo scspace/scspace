@@ -6,7 +6,7 @@
     <h4 class="text-center soft-red"> 이제 제대로 로그인 가능합니다. 서비스에 불편을 드려 죄송합니다. </h4>
 
     <div class="row">
-        <div class="col-sm-3">
+        <!-- <div class="col-sm-3">
             <h2> 리크루팅 </h2>
             <hr>
             <table class="table">
@@ -32,7 +32,7 @@
                 </tbody>
             </table>
             <a href="/recruit" type="button" class="btn soft-red-button btn-lg btn-block"> 리크루팅 바로가기 </a>
-        </div>
+        </div> -->
         <div class="col-sm-9">
             <h2> 공지사항 </h2> <hr>
             <table class="table table-hover">

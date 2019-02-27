@@ -1,4 +1,5 @@
 <?php
+$content = json_decode($reservation['content'], TRUE);
 
 $that = $this;
 $format = function($time) use ($that) {
@@ -10,9 +11,6 @@ $format = function($time) use ($that) {
 $time_from = $format($reservation['time_from']);
 $time_to = $format($reservation['time_to']);
 $time_request = $format($reservation['time_request']);
-
-$content = json_decode($reservation['content']);
-
 ?>
 
 <div class="modal fade" id="<?=$reservation['id']?>" tabindex="-1" role="dialog" aria-labelledby="<?=$reservation['id']?>">
@@ -20,34 +18,9 @@ $content = json_decode($reservation['content']);
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="<?=$reservation['id']?>"><?=$this->lang->line($reservation['space'])?> 예약서 </h3>
+                <h4 class="modal-title" id="<?=$reservation['id']?>"><?=$this->lang->line($reservation['space'])?></h4>
             </div>
             <div class="modal-body form-horizontal">
-                <h4> 단체와 행사 </h4> <hr>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"> 단체 이름 </label>
-                    <div class="col-sm-9">
-                        <p class="form-control-static"> <?=$content->team_name?> </p>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"> 행사 이름 </label>
-                    <div class="col-sm-9">
-                        <p class="form-control-static"> <?=$content->event_name?> </p>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"> 예상 참여 인원 </label>
-                    <div class="col-sm-9">
-                        <p class="form-control-static"> <?=$content->entry?> </p>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label"> 행사 내용 </label>
-                    <div class="col-sm-9">
-                        <p class="form-control-static"> <?=$content->content?> </p>
-                    </div>
-                </div>
                 <h4> 시간 </h4> <hr>
                 <div class="form-group">
                     <label class="col-sm-3 control-label"> 행사 시간 </label>
@@ -55,6 +28,35 @@ $content = json_decode($reservation['content']);
                         <p class="form-control-static"> <?=$time_from?> ~ <?=$time_to?> </p>
                     </div>
                 </div>
+
+                <h4> 팀과 연습 내용 </h4> <hr>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 팀 이름 </label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static"> <?=$content['team_name']?> </p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 참가 멤버 </label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">
+                            <?php foreach($content['member'] as $member):?>
+                            <?=$member?> <br>
+                            <?php endforeach;?>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"> 연습 내용 </label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">
+                            <?=$content['content']?>
+                        </p>
+                    </div>
+                </div>
+
                 <h4> 예약자 </h4> <hr>
                 <div class="form-group">
                     <label class="col-sm-3 control-label"> 예약자 학번 </label>
@@ -80,6 +82,7 @@ $content = json_decode($reservation['content']);
                         <p class="form-control-static"> <?=$reservation['email']?> </p>
                     </div>
                 </div>
+
                 <h4> 예약 처리 </h4> <hr>
                 <div class="form-group">
                     <label class="col-sm-3 control-label"> 예약 처리 </label>
@@ -101,8 +104,8 @@ $content = json_decode($reservation['content']);
                         <input type="text" class="form-control" name="reject-reason" placeholder="<?=$reservation['reject_reason']?>">
                     </div>
                 </div>
-
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"> 닫기 </button>
                 <button type="button" class="btn btn-primary" ng-click="update(<?=$reservation['id']?>)"> 처리 </button>
@@ -110,3 +113,4 @@ $content = json_decode($reservation['content']);
         </div>
     </div>
 </div>
+

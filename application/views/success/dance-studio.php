@@ -36,27 +36,18 @@ $time_request = date_create_from_format('Y-m-d H:i:s',$reservation['time_request
 
         <h4> 단체와 행사 </h4> <hr>
         <div class="form-group">
-            <label class="col-sm-3 control-label"> 단체 이름 </label>
+            <label class="col-sm-3 control-label"> 팀 이름 </label>
             <div class="col-sm-9">
                 <p class="form-control-static"> <?=$content['team_name']?> </p>
             </div>
         </div>
+
         <div class="form-group">
-            <label class="col-sm-3 control-label"> 행사 이름 </label>
+            <label class="col-sm-3 control-label"> 연습 내용 </label>
             <div class="col-sm-9">
-                <p class="form-control-static"> <?=$content['event_name']?> </p>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label"> 예상 참여 인원 </label>
-            <div class="col-sm-9">
-                <p class="form-control-static"> <?=$content['entry']?> </p>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label"> 행사 내용 </label>
-            <div class="col-sm-9">
-                <p class="form-control-static"> <?=$content['content']?> </p>
+                <p class="form-control-static">
+                    <?=$content['content']?>
+                </p>
             </div>
         </div>
 
@@ -137,3 +128,5 @@ $time_request = date_create_from_format('Y-m-d H:i:s',$reservation['time_request
         <?php endif;?>
     </div>
 </main>
+
+

@@ -34,7 +34,10 @@ class Reservation extends CI_Controller {
 			$teams = json_encode($this->team_model->get_members());
 			$this->load->view("form/".$space,array('space'=>$space, 'teams'=>$teams));
 
-
+		} elseif ($space == 'dance-studio') { // 무예실도 멤버 조사
+			$this->load->model('ds_team_model');
+			$teams = json_encode($this->ds_team_model->get_members());
+			$this->load->view("form/".$space,array('space'=>$space, 'teams'=>$teams));
 		// 보증금이 있는 공간은 보증금과 함께 로드
 		} elseif (in_array($space, array('ullim-hall','mirae-hall','open-space'))) {
 
@@ -58,7 +61,7 @@ class Reservation extends CI_Controller {
 		$space = str_replace('-','_',$space);
 
 		$this->load->driver('space');
-
+		
 		if ( ! $this->space->is_space_name($space) ) show_404();
 
 		// 예약 가능한지 조사해서 가능하면 예약, 불가능하면 불가능한 이유를 보여줌
@@ -69,7 +72,7 @@ class Reservation extends CI_Controller {
 			show_error($validity);
 		}
 
-		// 예약 성공 페이지로 리다이렉트
+		// // // 예약 성공 페이지로 리다이렉트
 		$this->load->helper('url');
 		$this->load->library('space');
 		$name = $this->space->space_to_name($space);
@@ -121,3 +124,5 @@ class Reservation extends CI_Controller {
 
 	}
 }
+
+

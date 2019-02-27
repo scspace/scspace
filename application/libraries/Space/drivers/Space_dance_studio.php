@@ -24,20 +24,19 @@ class Space_dance_studio extends CI_Driver {
             'time_to',
             'space',
             'team_name',
-            'event_name',
-            'entry',
+            'member',
             'content'
         ),TRUE);
 
         $space = $post['space'];
+		$space = str_replace('-','_',$space);
         $time_from = $post['time_from'];
         $time_to = $post['time_to'];
 
         $content = json_encode(
             array(
                 'team_name' => $post['team_name'],
-                'event_name' => $post['event_name'],
-                'entry' => $post['entry'],
+                'member' => $post['member'],
                 'content' => $post['content']
             )
         );
@@ -53,10 +52,11 @@ class Space_dance_studio extends CI_Driver {
         );
         $this->ci->db->insert('reservation',$reservation);
         $reservation_id = $this->ci->db->insert_id();
+        // return $reservation;
 
         $event = array(
             'space' => $space,
-            'title' => $post['team_name'].'의 '.$post['event_name'],
+            'title' => $post['team_name'],
             'content' => $content,
             'time_from' => $time_from,
             'time_to' => $time_to,
@@ -121,3 +121,4 @@ class Space_dance_studio extends CI_Driver {
         }
     }
 }
+

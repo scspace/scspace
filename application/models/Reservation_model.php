@@ -162,7 +162,7 @@ class Reservation_model extends CI_Model {
                         'time_to' => $time_to,
                         'reserver_id' => $_SESSION['student_id'],
                         'time_request' => date('Y-m-d H:i:s'),
-                        'content' => $this->input->post('content', TRUE)
+                        'team_id' => '1'
                     );
                     $this->db->insert('reservation',$reservation);
                 }
@@ -484,3 +484,4 @@ class Reservation_model extends CI_Model {
     }
 
 }
+

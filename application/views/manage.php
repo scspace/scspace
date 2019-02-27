@@ -116,7 +116,8 @@ function spaceToName($space){
 					<li> <a href="/manage/reservation/piano-room"> !피아노실 관리 </a> </li>
 					<hr>
 					<li> <a href="/manage/team"> 합주실 팀 목록 </a> </li>
-					<li> <a href="/manage/deposit-account"> 보증금 계좌 수정 </a> </li>
+					<li> <a href="/manage/ds_team"> 무예실 팀 목록 </a> </li>
+					<li> <a href="/manage/deposit-account"> 보증금 계좌 수정(작동 안 함) </a> </li>
 					<li> 근로학생 목록 수정 </li>
 				</ul>
 	    	</div>

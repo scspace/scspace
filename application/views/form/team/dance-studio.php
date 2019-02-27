@@ -1,10 +1,10 @@
 <nav class="navbar navbar-default navbar-static-top local-nav">
     <div class="container">
         <ul class="nav navbar-nav local-domain">
-            <li><a href="/group-practice-room"> 합주실 </a></li>
+            <li><a href="/dance-studio"> 무예실 </a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/group-practice-room"> 소개로 돌아가기 </a></li>
+            <li><a href="/dance-studio"> 소개로 돌아가기 </a></li>
         </ul>
     </div>
     <div class="container">
@@ -14,9 +14,9 @@
 <div class="affix-fix"></div>
 
 <main class="container" ng-app="form" ng-controller="FormController">
-    <form name="form" class="form-horizontal" action="/team/register_process" method="post">
+    <form name="form" class="form-horizontal" action="/team/ds_register_process" method="post">
         <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
-        <input type="hidden" name="space" value="group-practice-room">
+        <input type="hidden" name="space" value="dance-studio">
         <section>
             <h4> 팀 정보 </h4>
             <hr>
@@ -138,7 +138,7 @@
 
 
                 <div class="col-sm-offset-2 col-sm-10">
-                    <p> 합주실 팀 등록 신청 후 아래 보증금 계좌로 예치금 <span class="soft-red">50,000원</span>을 입금해야 팀 등록이 완료됩니다 </p>
+                    <p> 무예실 팀 등록 신청 후 아래 보증금 계좌로 예치금 <span class="soft-red">50,000원</span>을 입금해야 팀 등록이 완료됩니다 </p>
                 </div>
 
                 <label class="col-sm-2 control-label"> 보증금 계좌 </label>
@@ -183,8 +183,8 @@
                 <div class="col-sm-offset-2 col-sm-10">
                     <p>
                         학기 말 보증금을 돌려받을 계좌를 입력해주세요.
-                        예치금은 상근일 기준으로 키 반납이 하루 늦어질 때 마다 2,000원씩 차감되며,
-                        예치금이 0원이 될 경우 예치금을 다시 입금해 주셔야 합주실을 계속 이용하실 수 있습니다.
+                        <!-- 예치금은 상근일 기준으로 키 반납이 하루 늦어질 때 마다 2,000원씩 차감되며,
+                        예치금이 0원이 될 경우 예치금을 다시 입금해 주셔야 합주실을 계속 이용하실 수 있습니다. -->
                         보증금에서 연체 수수료를 제한 금액이 반환됩니다
                     </p>
                 </div>
@@ -204,3 +204,5 @@
         </div>
     </form>
 </main>
+
+
