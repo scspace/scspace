@@ -43,9 +43,9 @@
 </style>
 <main class="container">
 
-    <h1> 리크루팅 기간이 아닙니다 </h1>
+    <!-- <h1> 리크루팅 기간이 아닙니다 </h1> -->
 
-    <!-- <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
+    <<img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">
             <h2 class="soft-red"> 개요 </h2>
@@ -71,7 +71,7 @@
                             <span>
                                 <a  href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1"
                                     class="soft-red"
-                                    >지원서</a>를 3월 11일까지 제출
+                                    >지원서</a>를 3월 8일까지 제출
                             </span>
                         </td>
                     </tr>
@@ -79,29 +79,29 @@
                         <th rowspan="4"> 일정 </th>
                         <td> 오픈 공간위 </td>
                         <td colspan="2">
-                            2월 26일 - 3월 2일, 3월 5일 - 9일 19-21시
+                            2월 25일 - 3월 5일 19-21시
                             공간위실
                         </td>
                     </tr>
                     <tr>
                         <td> 지원 마감 </td>
                         <td colspan="2">
-                            3월 11일
+                            3월 8일
                         </td>
                     </tr>
                     <tr>
                         <td> 면접 </td>
                         <td colspan="2">
-                            3월 12일 - 3월 14일
+                            3월 11일 - 3월 15일
                         </td>
                     </tr>
 
-                    <tr>
+		    <!-- <tr>
                         <td> 합격 발표 </td>
                         <td colspan="2">
                             3월 15일
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -336,6 +336,6 @@
 
         </div>
 
-    </div> -->
+    </div>
 
 </main>
