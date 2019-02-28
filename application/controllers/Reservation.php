@@ -34,7 +34,10 @@ class Reservation extends CI_Controller {
 			$teams = json_encode($this->team_model->get_members());
 			$this->load->view("form/".$space,array('space'=>$space, 'teams'=>$teams));
 
-
+		} elseif ($space == 'dance-studio') { // 무예실도 멤버 조사
+			$this->load->model('ds_team_model');
+			$teams = json_encode($this->ds_team_model->get_members());
+			$this->load->view("form/".$space,array('space'=>$space, 'teams'=>$teams));
 		// 보증금이 있는 공간은 보증금과 함께 로드
 		} elseif (in_array($space, array('ullim-hall','mirae-hall','open-space'))) {
 
