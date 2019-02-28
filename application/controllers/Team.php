@@ -46,6 +46,13 @@ class Team extends CI_Controller {
 		header('Location: /group-practice-room/team/'.$team_id);
     }
 
+   public function ds_register_process(){
+        $this->load->database();
+		$this->load->model('ds_team_model');
+		$team_id = $this->ds_team_model->register();
+		header('Location: /dance-studio/team/'.$team_id);
+    }
+
 	public function team($team_id){
 		$this->load->view('head');
 		$this->load->view('global-nav');
@@ -55,6 +62,21 @@ class Team extends CI_Controller {
 		$members = $this->team_model->get_members_of_team($team_id);
 		$team = $this->team_model->get_team_info($team_id);
 		$this->load->view('success/team',array(
+			'members' => $members,
+			'team' => $team
+		));
+		$this->load->view('footer');
+	}
+	
+	public function ds_team($team_id){
+		$this->load->view('head');
+		$this->load->view('global-nav');
+
+		$this->load->database();
+		$this->load->model('ds_team_model');
+		$members = $this->ds_team_model->get_members_of_team($team_id);
+		$team = $this->ds_team_model->get_team_info($team_id);
+		$this->load->view('success/ds_team',array(
 			'members' => $members,
 			'team' => $team
 		));

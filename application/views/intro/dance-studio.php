@@ -63,7 +63,17 @@
                 무예실은 예약이 없을 땐 누구나 사용 가능합니다.
             </p>
             <h3> 상시 예약 </h3>
-            <ul class="list-unstyled">
+	    <h4> 팀 등록 </h4>
+            <p>
+              예약을 위하여 최소 3인의 팀 등록을 필요합니다. <br>
+              팀 등록은 매 정규학기가 끝날 때 초기화 됩니다
+            </p>
+            <a href="/dance-studio/team-register" class="btn btn-soft-red pull-right"> 팀 등록 </a>
+            <div class="clearfix"></div>
+
+            <br>
+            <h4> 예약 가능 시간 </h4>
+	    <ul class="list-unstyled">
                 <li>사용 14일 전부터 이틀 전 오후 11시 59분까지 예약이 가능합니다.</li>
                 <li>현재는 <span class="soft-red"><?=date('n',strtotime('+2 day'))?>월
                     <?=date('j',strtotime('+2 day'))?>일</span>부터

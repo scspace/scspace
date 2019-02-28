@@ -129,6 +129,18 @@ class Manage extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function ds_team(){
+		$this->load->view('head');
+		$this->load->view('global-nav');
+
+		$this->load->database();
+		$this->load->model('ds_team_model');
+		$teams = $this->ds_team_model->get();
+		$this->load->view('manage/ds_team',array('teams'=>$teams));
+
+		$this->load->view('footer');
+	}
+
 	public function lost(){
 		$this->load->database();
 		$this->load->model('lost_model');

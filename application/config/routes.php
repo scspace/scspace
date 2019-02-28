@@ -66,4 +66,7 @@ $route['(ullim-hall|mirae-hall|bookdabang|open-space|individual-practice-room|gr
         = "reservation/delete/$1/$2";
 
 $route['group-practice-room/team/(:num)']
-        = "team/team/$1";
+	= "team/team/$1";
+
+$route['dance-studio/team/(:num)']
+        = "team/ds_team/$1";
