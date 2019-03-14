@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+error_reporting(0);
 
 /**
  * Team_Model
@@ -63,7 +64,7 @@ class Team_model extends CI_Model {
 
             $this->db->select('name');
             $this->db->where('id', $team['team_id']);
-            $team_name = $this->db->get('team')->row()->name;
+	    $team_name = $this->db->get('team')->row()->name;
 
             $members[$team_name] = $members_of_this_team;
         }

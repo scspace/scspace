@@ -43,9 +43,9 @@
 </style>
 <main class="container">
 
-    <!-- <h1> 리크루팅 기간이 아닙니다 </h1> -->
+    <h1> 리크루팅 기간이 아닙니다 </h1>
 
-    <<img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
+    <!-- <img src="/static/images/recruit-1.jpg" alt="신학관" class="img-responsive">
     <div class="row">
         <div class="col-sm-3">
             <h2 class="soft-red"> 개요 </h2>
@@ -69,7 +69,7 @@
                         <th> 지원 방법 </td>
                         <td colspan="3">
                             <span>
-                                <a  href="https://goo.gl/forms/Fo5WxOBUC6iu5rzl1"
+                                <a  href="https://goo.gl/forms/33y9NwYT3RKQAlgs2"
                                     class="soft-red"
                                     >지원서</a>를 3월 8일까지 제출
                             </span>
@@ -96,12 +96,12 @@
                         </td>
                     </tr>
 
-		    <!-- <tr>
+		    <tr>
                         <td> 합격 발표 </td>
                         <td colspan="2">
                             3월 15일
                         </td>
-                    </tr> -->
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -154,11 +154,6 @@
             <p>
                 관리팀은 미래홀과 울림홀, 무예실, 합주실 같이 학우들이 많이 쓰는 공간을 담당합니다. 많은 학우들이 공간을 쓸 수 있도록 예약 제도를 운영하고, 이용자가 몰리는 기간에는 추첨을 진행하는 등 모두가 공평하게 학생회관을 이용할 수 있도록 관리팀은 오늘도 노력하고 있습니다. 같이 관리팀에서 일할 분들을 환영합니다!
 
-            </p>
-
-            <h3 class="soft-red"> 책다방팀 </h3>
-            <p>
-                책다방 팀은 장영신학생회관 2층에 있는 책다방을 전체적으로 관리하며, 책다방이라는 공간을 이용한 행사를 진행하는 팀입니다. 평소 책을 좋아하여 즐기거나, 문화행사를 주관해 보고 싶은 분은 부디 지원해 주시기 바랍니다.
             </p>
 
             <h3 class="soft-red"> 사업지원팀 </h3>
@@ -336,6 +331,6 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 </main>

@@ -46,6 +46,7 @@
 			<ul class="list-unstyled domain">
 				<li> 연결 사이트 </li>
 				<li><a href="https://facebook.com/scspace.kaist" target="_blank"> 페이스북 페이지 </a></li>
+				<li><a href="http://pf.kakao.com/_xfFsvj" target="_blank"> 카카오톡 플러스친구 </a></li>
 				<li><a href="https://facebook.com/bookdabang" target="_blank"> 책다방 페이스북 페이지 </a></li>
 				<li><a href="http://kaist.ac.kr" target="_blank"> KAIST </a></li>
 				<!--<li><a href="https://student.kaist.ac.kr" target="_blank"> 학부 총학생회 </a></li>-->
