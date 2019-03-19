@@ -61,7 +61,7 @@ class Reservation extends CI_Controller {
 		$space = str_replace('-','_',$space);
 
 		$this->load->driver('space');
-
+		
 		if ( ! $this->space->is_space_name($space) ) show_404();
 
 		// 예약 가능한지 조사해서 가능하면 예약, 불가능하면 불가능한 이유를 보여줌
@@ -72,7 +72,7 @@ class Reservation extends CI_Controller {
 			show_error($validity);
 		}
 
-		// 예약 성공 페이지로 리다이렉트
+		// // // 예약 성공 페이지로 리다이렉트
 		$this->load->helper('url');
 		$this->load->library('space');
 		$name = $this->space->space_to_name($space);
@@ -124,3 +124,5 @@ class Reservation extends CI_Controller {
 
 	}
 }
+
+

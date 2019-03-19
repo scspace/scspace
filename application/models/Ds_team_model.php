@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  */
 
-class DS_Team_model extends CI_Model {
+class Ds_Team_model extends CI_Model {
 
     function __construct(){
         parent::__construct();
@@ -95,5 +95,6 @@ class DS_Team_model extends CI_Model {
     }
 
 }
+
 
 

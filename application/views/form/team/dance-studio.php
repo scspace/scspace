@@ -138,7 +138,7 @@
 
 
                 <div class="col-sm-offset-2 col-sm-10">
-                    <p> 무예실 팀 등록 신청 후 아래 보증금 계좌로 예치금 <span class="soft-red">200,000원</span>을 입금해야 팀 등록이 완료됩니다 </p>
+                    <p> 무예실 팀 등록 신청 후 아래 보증금 계좌로 예치금 <span class="soft-red">50,000원</span>을 입금해야 팀 등록이 완료됩니다 </p>
                 </div>
 
                 <label class="col-sm-2 control-label"> 보증금 계좌 </label>
@@ -204,4 +204,5 @@
         </div>
     </form>
 </main>
+
 
