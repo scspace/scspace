@@ -30,7 +30,7 @@ $time_request = date_create_from_format('Y-m-d H:i:s',$reservation['time_request
             <?php if ($reservation['state'] == 'deleted'):?>
                 취소된 예약입니다
             <?php else:?>
-                합주실 예약 신청이 완료되었습니다.
+                무예실 예약 신청이 완료되었습니다.
             <?php endif?>
         </h3>
 
@@ -128,4 +128,5 @@ $time_request = date_create_from_format('Y-m-d H:i:s',$reservation['time_request
         <?php endif;?>
     </div>
 </main>
+
 
