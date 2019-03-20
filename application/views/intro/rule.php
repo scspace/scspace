@@ -39,7 +39,7 @@
                       <li> <a href="/static/documents/rules/160331 책다방 관리이용수칙.pdf" download="160331 책다방 관리이용수칙.pdf"> 책다방 운영 규칙</a></li>
                       <li> <a href="/static/documents/rules/(180502) 합주실 사용 관리 수칙.pdf" download="(180502) 합주실 사용 관리 수칙.pdf">합주실 운영 규칙</li>
                       <li> <a href="/static/documents/rules/(180502) 다용도실 사용 관리 규칙.pdf" download="(180502) 다용도실 사용 관리 규칙.pdf"> 다용도실 운영 규칙</a></li>
-                      <li> <a href="/static/documents/rules/(180502) 무예실 사용 관리 규칙.pdf" download="(180502) 무예실 사용 관리 규칙.pdf"> 무예실 운영 규칙</a></li>
+                      <li> <a href="/static/documents/rules/(190307) 무예실 사용 관리 수칙.pdf" download="(190307) 무예실 사용 관리 수칙.pdf"> 무예실 운영 규칙</a></li>
                       <li> <a href="/static/documents/rules/(180530) 개인연습실 사용 관리 규칙.pdf" download="(180530) 개인연습실 사용 관리 규칙.pdf">개인연습실 운영 규칙</li>
                       <li> <a href="/static/documents/rules/(180530) 피아노실 사용 관리 규칙.pdf" download="(180530) 피아노실 사용 관리 규칙.pdf">피아노실 운영  규칙</li>
                       <li> <a href="/static/documents/rules/(180502) 울림홀 사용 관리 수칙.pdf" download="(180502) 울림홀 사용 관리 수칙.pdf"> 울림홀 운영 규칙</a></li>
@@ -70,3 +70,4 @@
       </section>
   </article>
 </main>
+
