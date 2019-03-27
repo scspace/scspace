@@ -45,7 +45,8 @@
                       <li> <a href="/static/documents/rules/111. 울림홀 사용 관리 수칙 (180502).pdf" download="[학생문화공간위원회] 울림홀 사용 관리 수칙 (180502).pdf"> 울림홀 운영 규칙</a></li>
                       <li> <a href="/static/documents/rules/112. 미래홀 사용 관리 수칙 (180502).pdf" download="[학생문화공간위원회] 미래홀 사용 관리 수칙 (180502).pdf"> 미래홀 운영 규칙</a></li>
                       <li> <a href="/static/documents/rules/113. 오픈스페이스 사용 규칙 (190320).pdf" download="[학생문화공간위원회] 오픈스페이스 사용 규칙 (190320).pdf"> 오픈스페이스 운영 규칙</a></li>
-                      <li> 단체실 운영 규칙</li>
+                      
+                      <li> <a href="/static/documents/rules/114. 단체실 운영 규칙 (190327).pdf" download="[학생문화공간위원회] 단체실 운영 규칙 (190327).pdf"> 단체실 운영 규칙</li>
                       <li> 신학관 안전점검 규칙
                         <ul>
                           <li> 단체실</li>
