@@ -31,6 +31,12 @@ for($i = 0;$i < count($reservations); $i++){
 			break;
 	}
 }
+
+function sort_by_timerequest($a, $b){
+	return strcmp($b['time_request'], $a['time_request']);
+}
+usort($kr_reservations, "sort_by_timerequest");
+
 ?>
 
 <nav class="navbar navbar-default navbar-static-top local-nav">
@@ -153,3 +159,4 @@ for($i = 0;$i < count($reservations); $i++){
 		</tbody>
 	</table>
 </main>
+
