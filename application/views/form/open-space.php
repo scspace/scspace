@@ -244,7 +244,7 @@
                 <label class="col-sm-2 control-label"> 입금 계좌 </label>
                 <div class="col-sm-2 col-md-1 field-first">
                     <p class="input-first form-control-static">
-                        전남수 <br>
+                        김태현 <br>
                     </p>
 
                 </div>
@@ -255,7 +255,7 @@
                 </div>
                 <div class="col-sm-4 col-md-3 field-last">
                     <p class="input-last form-control-static">
-                        1002-059-048744
+                        1006-101-508206
                     </p>
                 </div>
             </div>
@@ -309,3 +309,4 @@
 
     </form>
 </main>
+
