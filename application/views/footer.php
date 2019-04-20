@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="col-xs-6 col-sm-4 col-md-2">
 			<ul class="list-unstyled domain">
-				<li> 공간위 </li>
+				<li> 학생문화공간위원회 </li>
 				<li><a href="/intro/committee"> 소개 </a></li>
 				<li><a href="/intro/business"> 사업 </a></li>
 				<li><a href="/intro/rule"> 회칙 </a></li>
