@@ -86,7 +86,7 @@
             <br>
             <h4> 예약 가능 시간 </h4>
             <ul class="list-unstyled">
-                <li>사용 14일 전부터 하루 전 21:00까지 예약이 가능합니다.</li>
+                <li>사용 14일 전부터 이틀 전 21:00까지 예약이 가능합니다.</li>
                 <li>현재는 <span class="soft-red"><?=date('n',strtotime('+2 day'))?>월
                     <?=date('j',strtotime('+2 day'))?>일</span>부터
                     <span class="soft-red"><?=date('n',strtotime('+14 day'))?>월
@@ -259,3 +259,4 @@
         </div>
     </section>
 </main>
+
