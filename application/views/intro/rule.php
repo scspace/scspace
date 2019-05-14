@@ -60,7 +60,7 @@
                     <ol>
                       <li> 사무실 창고 운영 규칙</li>
                       <li> CCTV 열람 운영 규칙</li>
-                      <li> <a href="/static/documents/rules/201. 물품대여 규칙 (180524).pdf" download="[학생문화공간위원회] 물품대여 규칙 (180524).pdf"> 물품 대여사업 운영 규칙</li>
+                      <li> <a href="/static/documents/rules/201.물품대여규칙(190502).pdf" download="[학생문화공간위원회] 물품대여 규칙 (190502).pdf"> 물품 대여사업 운영 규칙</li>
                       <li> 유실물 관리 규칙</li>
                     </ol>
                   </li>
