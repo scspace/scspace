@@ -176,6 +176,7 @@
             <div class="row">
                 <p class="col-sm-offset-2 col-sm-10">
                     <span class="glyphicon glyphicon-exclamation-sign"></span> 장비 사용 시 근로장학생이 <span class="soft-red">반드시</span> 필요합니다. <br>
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> 근로장학생의 연락처는 신청 단체가 요청한 경우에만 제공됩니다 <br>
                 </p>
             </div>
             <div class="form-group has-feedback" ng-class="{'has-error':form.labor_time.$touched && form.labor_time.$invalid}">
