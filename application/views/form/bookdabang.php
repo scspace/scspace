@@ -81,15 +81,15 @@
         <div class="form-group has-feedback" ng-class="{'has-error':form['time[from]'].$touched && form['time[from]'].$invalid || form['time[to]'].$touched && form['time[to]'].$invalid}">
             <label class="col-sm-2 control-label"> 행사 시간 </label>
             <div class="col-sm-4">
-                <input ng-model="time_from" type="datetime-local" name="time[from]" placeholder="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
+                <input ng-model="time_from" type="datetime-local" name="time[from]" placeholder="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45, true) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_from" required>
                 <span ng-show="form['time[from]'].$touched && form['time[from]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
 
             <div class="col-sm-4">
-                <input ng-model="time_to" type="datetime-local" name="time[to]" placeholder="{{dateAfter(44) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
+                <input ng-model="time_to" type="datetime-local" name="time[to]" placeholder="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" min="{{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}" max="{{dateAfter(45, true) | date:'yyyy-MM-ddTHH:mm'}}" class="form-control time_to" required>
                 <span ng-show="form['time[to]'].$touched && form['time[to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
-            <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 책다방은 {{dateAfter(7) | date:'MM.dd'}}일에서 {{dateAfter(44) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
+            <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 책다방은 {{dateAfter(7) | date:'MM.dd'}}일에서 {{dateAfter(45) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form['time[from]'].$touched && form['time[from]'].$error.required) || (form['time[to]'].$touched && form['time[to]'].$error.required)"> 행사 시간을 입력해주세요.</span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.datetimelocal || form['time[to]'].$error.datetimelocal"> {{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
         </div>

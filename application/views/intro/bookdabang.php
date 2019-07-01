@@ -114,11 +114,10 @@
 
                 <h3> 일반 예약 </h3>
                 <ul class="list-unstyled">
-                    <li>행사 45일 전부터 7일 전 21:00까지 예약이 가능합니다.</li>
-                    <li>현재는 <span class="soft-red"><?=date('n',strtotime('+7 day'))?>월
-                        <?=date('j',strtotime('+7 day'))?>일</span>부터
-                        <span class="soft-red"><?=date('n',strtotime('+44 day'))?>월
-                        <?=date('j',strtotime('+44 day'))?>일</span>까지의 예약이 가능합니다.</li>
+                    <li>행사 45일 전부터 7일 전 오후 11시 59분까지 예약이 가능합니다.</li>
+                    <li>현재는
+                        <span class="soft-red"><?=date('n',strtotime('+7 day +9 hour'))?>월 <?=date('j',strtotime('+7 day +9 hour'))?>일</span>부터
+                        <span class="soft-red"><?=date('n',strtotime('+45 day +9 hour'))?>월 <?=date('j',strtotime('+45 day +9 hour'))?>일</span>까지의 예약이 가능합니다.</li>
                     <li>하루에 최대 <span class="soft-red">4시간</span> 예약할 수 있습니다.</li>
                     <li>예약을 받은 후 최소 이틀 이내로 신청자에게 승인 여부 연락이 갑니다.</li>
                     <li>예약 취소는 행사 3일 전 오후 9시까지 학생문화공간위원회에 통보해야 합니다.</li>
