@@ -101,7 +101,7 @@ class Space extends CI_Driver_Library {
 
         return (
             ($date_diff > $max_day_start)
-            || (($date_diff == $max_day_start) && ((int) date('G',$now) < 21))
+            || (($date_diff == $max_day_start))
         ) ? TRUE : FALSE;
     }
 
@@ -117,7 +117,7 @@ class Space extends CI_Driver_Library {
 
         return (
             ($date_diff < $max_day_end)
-            || (($date_diff == $max_day_end) && ((int) date('G',$now) >= 21))
+            || (($date_diff == $max_day_end))
         ) ? TRUE : FALSE;
     }
 
