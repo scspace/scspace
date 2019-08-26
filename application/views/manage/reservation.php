@@ -89,6 +89,7 @@ usort($kr_reservations, "sort_by_timerequest");
 				<option>다용도실</option>
 				<option>세미나실 1</option>
 				<option>세미나실 2</option>
+				<option>창작공방</option>
 				<option>울림홀</option>
 				<option>미래홀</option>
 				<option>오픈스페이스</option>
@@ -116,6 +117,7 @@ usort($kr_reservations, "sort_by_timerequest");
 						<option>다용도실</option>
 						<option>세미나실 1</option>
 						<option>세미나실 2</option>
+				<option>창작공방</option>
 						<option>울림홀</option>
 						<option>미래홀</option>
 						<option>오픈스페이스</option>
