@@ -50,6 +50,12 @@ class Reservation_model extends CI_Model {
 
                     return $this->db->get('reservation',$limit,$offset);
                     break;
+                case "workshop":
+                    $this->db->order_by("time_from", "desc");
+                    $this->db->where_in('space',$space);
+
+                    return $this->db->get('reservation',$limit,$offset);
+                    break;
                 case 'bookdabang':
                     $this->db->select('id, reserver_id, space, time_from, time_to, time_request, state, reject_reason, content');
                     $this->db->where_in('space',$space);
@@ -58,6 +64,11 @@ class Reservation_model extends CI_Model {
                 case 'ullim-hall':
                     $this->db->select('id, reserver_id, space, time_from, time_to, time_request, state, reject_reason, content');
                     $this->db->where('space','ullim_hall');
+                    $this->db->from('reservation');
+                    return $this->db->get();
+                case 'mirae-hall':
+                    $this->db->select('id, reserver_id, space, time_from, time_to, time_request, state, reject_reason, content');
+                    $this->db->where('space','mirae_hall');
                     $this->db->from('reservation');
                     return $this->db->get();
                 case 'mirae-hall':
@@ -153,6 +164,7 @@ class Reservation_model extends CI_Model {
 
             case 'seminar_room_1':
             case 'seminar_room_2':
+            case 'workshop':
             case 'multipurpose_room':
             case 'dance_studio':
                 if ($this->validate($space, $time_from, $time_to)){
@@ -334,9 +346,10 @@ class Reservation_model extends CI_Model {
             case 'multipurpose_room':
             case 'seminar_room_1':
             case 'seminar_room_2':
+            case 'workshop':
             case 'bookdabang':
 
-                if (($space == 'seminar_room_1') || ($space =='seminar_room_2')){
+                if (($space == 'seminar_room_1') || ($space =='seminar_room_2') || ($space =='workshop')){
                     $max_duration = 10800;
                 } else if ($space == 'bookdabang'){
                     $max_duration = 14400;

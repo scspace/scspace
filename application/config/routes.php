@@ -56,13 +56,13 @@ $route['(ullim-hall|mirae-hall|bookdabang|workshop|open-space|1f-lobby|2f-lobby|
         = "intro/space/$1";
 $route['(ullim-hall|mirae-hall|bookdabang|workshop|open-space|1f-lobby|2f-lobby|3f-lobby|exhibition-stair|community-yard|media-space|rooftop|individual-practice-room|group-practice-room|dance-studio|seminar-room|piano-room|multipurpose-room)/(intro|state|reservation)']
         = "$2/space/$1";
-$route['(group-practice-room|dance-studio|seminar-room|multipurpose-room)/team-register']
+$route['(group-practice-room|dance-studio|multipurpose-room)/team-register']
         = "team/register/$1";
 
-$route['(ullim-hall|mirae-hall|bookdabang|open-space|individual-practice-room|group-practice-room|dance-studio|seminar-room|piano-room|multipurpose-room)/form/(:num)']
+$route['(ullim-hall|mirae-hall|bookdabang|workshop|open-space|individual-practice-room|group-practice-room|dance-studio|seminar-room|piano-room|multipurpose-room)/form/(:num)']
         = "reservation/form/$1/$2";
 
-$route['(ullim-hall|mirae-hall|bookdabang|open-space|individual-practice-room|group-practice-room|dance-studio|seminar-room|piano-room|multipurpose-room)/delete/(:num)']
+$route['(ullim-hall|mirae-hall|bookdabang|workshop|open-space|individual-practice-room|group-practice-room|dance-studio|seminar-room|piano-room|multipurpose-room)/delete/(:num)']
         = "reservation/delete/$1/$2";
 
 $route['group-practice-room/team/(:num)']

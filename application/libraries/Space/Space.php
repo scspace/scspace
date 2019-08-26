@@ -25,7 +25,8 @@ class Space extends CI_Driver_Library {
             'ullim_hall',
             'mirae_hall',
             'open_space',
-            'bookdabang'
+            'bookdabang',
+            'workshop'
         );
         $this->ci =& get_instance();
     }
