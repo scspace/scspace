@@ -127,6 +127,7 @@ function spaceToName($space){
 					<hr>
 					<li> <a href="/manage/reservation/open-space"> 오픈스페이스 관리 </a> </li>
 					<li> <a href="/manage/reservation/seminar-room"> 세미나실 관리 </a> </li>
+					<li> <a href="/manage/reservation/workshop"> 창작공방 관리 </a> </li>
 					<li> <a href="/manage/reservation/dance-studio"> 무예실 관리 </a> </li>
 					<li> <a href="/manage/reservation/multipurpose-room"> 다용도실 관리 </a> </li>
 				</ul>

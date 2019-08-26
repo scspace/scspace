@@ -270,6 +270,7 @@ function genData() {
             'multipurpose_room': '다용도실',
             'seminar_room_1': '세미나실 1',
             'seminar_room_2': '세미나실 2',
+            'workshop': '창작공방',
             'ullim_hall': '울림홀',
             'mirae_hall': '미래홀',
             'open_space': '오픈 스페이스',
