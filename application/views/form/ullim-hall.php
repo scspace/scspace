@@ -275,7 +275,7 @@
                 <label class="col-sm-2 control-label"> 입금 계좌 </label>
                 <div class="col-sm-2 col-md-1 field-first">
                     <p class="input-first form-control-static">
-                        김태현 <br>
+                        김대희 <br>
                     </p>
                 </div>
                 <div class="col-sm-2 col-md-1 field-middle">
@@ -285,7 +285,7 @@
                 </div>
                 <div class="col-sm-4 col-md-3 field-last">
                     <p class="input-last form-control-static">
-                        1006-101-508206
+                        1006-001-516254
                     </p>
                 </div>
             </div>
