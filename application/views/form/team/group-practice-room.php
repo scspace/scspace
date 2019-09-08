@@ -160,7 +160,7 @@
                             <div class="row">
                                 <label class="col-xs-3 col-sm-2 control-label second-label"> 계좌 </label>
                                 <div class="col-xs-9 col-sm-10">
-                                    <p class="form-control-static"> 1006-101-508206 </p>
+                                    <p class="form-control-static"> 1006-001-516254 </p>
                                 </div>
                             </div>
 
@@ -171,7 +171,7 @@
                             <div class="row">
                                 <label class="col-xs-3 col-sm-2 control-label second-label"> 예금주 </label>
                                 <div class="col-xs-9 col-sm-10">
-                                    <p class="form-control-static"> 김태현 </p>
+                                    <p class="form-control-static"> 김대희 </p>
                                 </div>
                             </div>
 
