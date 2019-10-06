@@ -156,7 +156,7 @@ usort($kr_reservations, "sort_by_timerequest");
 
 			<?php
 			foreach ($reservations as $reservation){
-				$this->load->view('modal/'.spaceToName($reservation['space']), array('reservation'=>$reservation));
+			$this->load->view('modal/'.spaceToName($reservation['space']), array('reservation'=>$reservation));
 			}?>
 		</tbody>
 	</table>

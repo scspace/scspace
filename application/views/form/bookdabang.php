@@ -90,7 +90,7 @@
                 <span ng-show="form['time[to]'].$touched && form['time[to]'].$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
             </div>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.min || form['time[from]'].$error.max || form['time[to]'].$error.min || form['time[to]'].$error.max"> 현재 책다방은 {{dateAfter(7) | date:'MM.dd'}}일에서 {{dateAfter(45) | date:'MM.dd'}}일까지 빌릴 수 있습니다. </span>
-            <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form['time[from]'].$touched && form['time[from]'].$error.required) || (form['time[to]'].$touched && form['time[to]'].$error.required)"> 행사 시간을 입력해주세요.</span>
+	    <span class="help-block col-sm-offset-2 col-sm-10" ng-show="(form['time[from]'].$touched && form['time[from]'].$error.required) || (form['time[to]'].$touched && form['time[to]'].$error.required)"> 행사 시간을 입력해주세요.</span>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form['time[from]'].$error.datetimelocal || form['time[to]'].$error.datetimelocal"> {{dateAfter(7) | date:'yyyy-MM-ddTHH:mm'}}의 형식으로 입력해주세요. </span>
         </div>
 
