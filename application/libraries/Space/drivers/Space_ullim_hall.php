@@ -32,7 +32,8 @@ class Space_ullim_hall extends CI_Driver {
             'labor_time',
             'no_chair',
             'no_table',
-            '1f_lobby',
+	    '1f_lobby',
+	    'if_agree',
             'bring_food',
             'deposit',
             'event_content'
@@ -56,7 +57,8 @@ class Space_ullim_hall extends CI_Driver {
                 'labor_time' => $post['labor_time'],
                 'no_chair' => $post['no_chair'],
                 'no_table' => $post['no_table'],
-                '1f_lobby' => $post['1f_lobby'],
+		'1f_lobby' => $post['1f_lobby'],
+		'1f_agree' => $post['1f_agree'],
                 'bring_food' => $post['bring_food'],
                 'deposit' => $post['deposit'],
                 'event_content' => $post['event_content']

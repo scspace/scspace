@@ -73,7 +73,16 @@
             </div>
             <span class="help-block col-sm-offset-2 col-sm-10" ng-show="form.promote.$touched && form.promote.$error.required">홍보 방법을 입력해주세요.</span>
         </div>
-
+	<div class="form-group">
+                <label class="col-sm-2 control-label"> 약관 동의 </label>
+                <div class="col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="1f_agree" value="yes"> 공간 예약규칙과 공간 보증금 규칙에 대해 동의합니다. (필수)
+                        </label>
+                    </div>
+                </div>
+            </div>
 
         <h4> 시간 정보 </h4>
         <hr>
