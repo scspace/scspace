@@ -128,9 +128,9 @@
               </thead>
               <tbody>
                   <tr>
-                      <td> 5만원 </td>
-                      <td> 15만원 </td>
-                      <td> 50만원 </td>
+                      <td> 0원 </td>
+                      <td> 10만원 </td>
+                      <td> 25만원 </td>
                   </tr>
               </tbody>
             </table>

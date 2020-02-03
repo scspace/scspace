@@ -273,9 +273,9 @@
                 <label class="col-sm-2 control-label"> 보증금 </label>
                 <div class="col-sm-10">
                     <p ng-switch="bring_food" class="form-control-static">
-                        <span ng-switch-when="none"> <span class="soft-red">50,000</span> 원 </span>
-                        <span ng-switch-when="snack"> <span class="soft-red">150,000</span> 원 </span>
-                        <span ng-switch-when="food/drink"> <span class="soft-red">500,000</span> 원 </span>
+                        <span ng-switch-when="none"> <span class="soft-red">0</span> 원 </span>
+                        <span ng-switch-when="snack"> <span class="soft-red">100,000</span> 원 </span>
+                        <span ng-switch-when="food/drink"> <span class="soft-red">250,000</span> 원 </span>
                         <span ng-switch-default class="soft-red"> 보증금은 음식물 반입 여부에 따라 달라집니다. </span>
                     </p>
                 </div>
