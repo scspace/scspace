@@ -153,7 +153,7 @@ function spaceToName($space){
 					<li> 문의사항 </li>
 					<li> <a href="/manage/lost"> 분실물 </a> </li>
 					<li> 게시물 신고대장 </li>
-					<iframe width= "200%" style= "height:200%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWG2hKGxX8YTn5fHZAOfWP8d5-tkKtXDQjdigffxoaTCtIh5ns_gulBZGcP-7w6EBKWwMsjJzfY8ro/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+					<!-- <iframe width= "200%" style= "height:200%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWG2hKGxX8YTn5fHZAOfWP8d5-tkKtXDQjdigffxoaTCtIh5ns_gulBZGcP-7w6EBKWwMsjJzfY8ro/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> -->
 				</ul>
 	    	</div>
 		</div>
